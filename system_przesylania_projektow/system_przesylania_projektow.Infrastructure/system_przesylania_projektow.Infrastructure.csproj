@@ -6,4 +6,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="EF\Configuration\" />
+    <Folder Include="EF\Contexts\" />
+    <Folder Include="EF\Repositories\" />
+    <Folder Include="EF\Options\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\system_przesylania_projektow.Application\system_przesylania_projektow.Application.csproj" />
+  </ItemGroup>
+
 </Project>

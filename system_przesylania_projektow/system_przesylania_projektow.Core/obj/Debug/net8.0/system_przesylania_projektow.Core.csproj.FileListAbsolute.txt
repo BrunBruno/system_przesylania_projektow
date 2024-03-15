@@ -1,0 +1,12 @@
+F:\Projekty\C# Projects\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\bin\Debug\net8.0\system_przesylania_projektow.Core.deps.json
+F:\Projekty\C# Projects\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\bin\Debug\net8.0\system_przesylania_projektow.Core.dll
+F:\Projekty\C# Projects\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\bin\Debug\net8.0\system_przesylania_projektow.Core.pdb
+F:\Projekty\C# Projects\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\obj\Debug\net8.0\system_przesylania_projektow.Core.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projekty\C# Projects\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\obj\Debug\net8.0\system_przesylania_projektow.Core.AssemblyInfoInputs.cache
+F:\Projekty\C# Projects\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\obj\Debug\net8.0\system_przesylania_projektow.Core.AssemblyInfo.cs
+F:\Projekty\C# Projects\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\obj\Debug\net8.0\system_przesylania_projektow.Core.csproj.CoreCompileInputs.cache
+F:\Projekty\C# Projects\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\obj\Debug\net8.0\system_przesylania_projektow.Core.sourcelink.json
+F:\Projekty\C# Projects\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\obj\Debug\net8.0\system_przesylania_projektow.Core.dll
+F:\Projekty\C# Projects\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\obj\Debug\net8.0\refint\system_przesylania_projektow.Core.dll
+F:\Projekty\C# Projects\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\obj\Debug\net8.0\system_przesylania_projektow.Core.pdb
+F:\Projekty\C# Projects\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\obj\Debug\net8.0\ref\system_przesylania_projektow.Core.dll

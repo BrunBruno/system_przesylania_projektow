@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Projekty\\C# Projects\\WAW_Poject\\system_przesylania_projektow\\system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj",
+      "projectUniqueName": "F:\\Projekty\\C# Projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj",
       "projectName": "system_przesylania_projektow.Core",
-      "projectPath": "F:\\Projekty\\C# Projects\\WAW_Poject\\system_przesylania_projektow\\system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj",
+      "projectPath": "F:\\Projekty\\C# Projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj",
       "packagesPath": "C:\\Users\\DST\\.nuget\\packages\\",
-      "outputPath": "F:\\Projekty\\C# Projects\\WAW_Poject\\system_przesylania_projektow\\system_przesylania_projektow.Core\\obj\\",
+      "outputPath": "F:\\Projekty\\C# Projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
