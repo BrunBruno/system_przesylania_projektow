@@ -80,3 +80,9 @@ D:\Projekty\spp\system_przesylania_projektow\system_przesylania_projektow\system
 D:\Projekty\spp\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Api\obj\Debug\net8.0\system_p.221FEA48.Up2Date
 D:\Projekty\spp\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Api\obj\Debug\net8.0\system_przesylania_projektow.Api.genruntimeconfig.cache
 D:\Projekty\spp\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Api\obj\Debug\net8.0\ref\system_przesylania_projektow.Api.dll
+D:\Projekty\spp\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Api\bin\Debug\net8.0\MediatR.dll
+D:\Projekty\spp\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Api\bin\Debug\net8.0\MediatR.Contracts.dll
+D:\Projekty\spp\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Api\bin\Debug\net8.0\Npgsql.dll
+D:\Projekty\spp\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Api\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\Projekty\spp\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Api\bin\Debug\net8.0\system_przesylania_projektow.Shared.dll
+D:\Projekty\spp\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Api\bin\Debug\net8.0\system_przesylania_projektow.Shared.pdb
