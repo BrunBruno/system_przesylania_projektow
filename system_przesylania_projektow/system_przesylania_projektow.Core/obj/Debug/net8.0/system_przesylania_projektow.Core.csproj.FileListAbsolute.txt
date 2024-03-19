@@ -10,3 +10,16 @@ F:\Projekty\C# Projects\system_przesylania_projektow\system_przesylania_projekto
 F:\Projekty\C# Projects\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\obj\Debug\net8.0\refint\system_przesylania_projektow.Core.dll
 F:\Projekty\C# Projects\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\obj\Debug\net8.0\system_przesylania_projektow.Core.pdb
 F:\Projekty\C# Projects\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\obj\Debug\net8.0\ref\system_przesylania_projektow.Core.dll
+D:\Projekty\spp\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\bin\Debug\net8.0\system_przesylania_projektow.Core.deps.json
+D:\Projekty\spp\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\bin\Debug\net8.0\system_przesylania_projektow.Core.dll
+D:\Projekty\spp\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\bin\Debug\net8.0\system_przesylania_projektow.Core.pdb
+D:\Projekty\spp\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\obj\Debug\net8.0\system_przesylania_projektow.Core.csproj.AssemblyReference.cache
+D:\Projekty\spp\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\obj\Debug\net8.0\system_przesylania_projektow.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projekty\spp\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\obj\Debug\net8.0\system_przesylania_projektow.Core.AssemblyInfoInputs.cache
+D:\Projekty\spp\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\obj\Debug\net8.0\system_przesylania_projektow.Core.AssemblyInfo.cs
+D:\Projekty\spp\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\obj\Debug\net8.0\system_przesylania_projektow.Core.csproj.CoreCompileInputs.cache
+D:\Projekty\spp\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\obj\Debug\net8.0\system_przesylania_projektow.Core.sourcelink.json
+D:\Projekty\spp\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\obj\Debug\net8.0\system_przesylania_projektow.Core.dll
+D:\Projekty\spp\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\obj\Debug\net8.0\refint\system_przesylania_projektow.Core.dll
+D:\Projekty\spp\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\obj\Debug\net8.0\system_przesylania_projektow.Core.pdb
+D:\Projekty\spp\system_przesylania_projektow\system_przesylania_projektow\system_przesylania_projektow.Core\obj\Debug\net8.0\ref\system_przesylania_projektow.Core.dll

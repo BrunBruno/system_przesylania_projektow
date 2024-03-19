@@ -1,18 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\Projekty\\C# Projects\\system_przesylania_projektow\\system_przesylania_projektow\\",
+  "WorkspaceRootPath": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ACAF0DF5-D982-43BC-B0E4-888E5170B250}|system_przesylania_projektow.Infrastructure\\system_przesylania_projektow.Infrastructure.csproj|f:\\projekty\\c# projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.infrastructure\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACAF0DF5-D982-43BC-B0E4-888E5170B250}|system_przesylania_projektow.Infrastructure\\system_przesylania_projektow.Infrastructure.csproj|solutionrelative:system_przesylania_projektow.infrastructure\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|f:\\projekty\\c# projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.application\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|solutionrelative:system_przesylania_projektow.application\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{157E8A40-AFFD-438C-8A2E-CBFA30A993D6}|system_przesylania_projektow.Api\\system_przesylania_projektow.Api.csproj|f:\\projekty\\c# projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{157E8A40-AFFD-438C-8A2E-CBFA30A993D6}|system_przesylania_projektow.Api\\system_przesylania_projektow.Api.csproj|solutionrelative:system_przesylania_projektow.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{157E8A40-AFFD-438C-8A2E-CBFA30A993D6}|system_przesylania_projektow.Api\\system_przesylania_projektow.Api.csproj|d:\\projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{157E8A40-AFFD-438C-8A2E-CBFA30A993D6}|system_przesylania_projektow.Api\\system_przesylania_projektow.Api.csproj|solutionrelative:system_przesylania_projektow.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Extensions.cs",
-              "DocumentMoniker": "F:\\Projekty\\C# Projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Infrastructure\\Extensions.cs",
-              "RelativeDocumentMoniker": "system_przesylania_projektow.Infrastructure\\Extensions.cs",
-              "ToolTip": "F:\\Projekty\\C# Projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Infrastructure\\Extensions.cs",
-              "RelativeToolTip": "system_przesylania_projektow.Infrastructure\\Extensions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Api\\Program.cs",
+              "RelativeDocumentMoniker": "system_przesylania_projektow.Api\\Program.cs",
+              "ToolTip": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Api\\Program.cs",
+              "RelativeToolTip": "system_przesylania_projektow.Api\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T08:52:35.315Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Extensions.cs",
-              "DocumentMoniker": "F:\\Projekty\\C# Projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Extensions.cs",
-              "RelativeDocumentMoniker": "system_przesylania_projektow.Application\\Extensions.cs",
-              "ToolTip": "F:\\Projekty\\C# Projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Extensions.cs",
-              "RelativeToolTip": "system_przesylania_projektow.Application\\Extensions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T08:51:51.352Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "F:\\Projekty\\C# Projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Api\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "system_przesylania_projektow.Api\\Properties\\launchSettings.json",
-              "ToolTip": "F:\\Projekty\\C# Projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Api\\Properties\\launchSettings.json",
-              "RelativeToolTip": "system_przesylania_projektow.Api\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-15T08:48:04.902Z",
+              "WhenOpened": "2024-03-19T09:23:52.386Z",
               "EditorCaption": ""
             }
           ]

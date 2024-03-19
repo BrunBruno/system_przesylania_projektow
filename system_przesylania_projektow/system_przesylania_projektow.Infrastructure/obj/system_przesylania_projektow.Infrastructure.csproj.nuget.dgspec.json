@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Projekty\\C# Projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Infrastructure\\system_przesylania_projektow.Infrastructure.csproj": {}
+    "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Infrastructure\\system_przesylania_projektow.Infrastructure.csproj": {}
   },
   "projects": {
-    "F:\\Projekty\\C# Projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj": {
+    "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projekty\\C# Projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj",
+        "projectUniqueName": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj",
         "projectName": "system_przesylania_projektow.Application",
-        "projectPath": "F:\\Projekty\\C# Projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj",
+        "projectPath": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj",
         "packagesPath": "C:\\Users\\DST\\.nuget\\packages\\",
-        "outputPath": "F:\\Projekty\\C# Projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\obj\\",
+        "outputPath": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "F:\\Projekty\\C# Projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj": {
-                "projectPath": "F:\\Projekty\\C# Projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj"
+              "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj": {
+                "projectPath": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj"
               }
             }
           }
@@ -52,6 +52,20 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -72,14 +86,14 @@
         }
       }
     },
-    "F:\\Projekty\\C# Projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj": {
+    "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projekty\\C# Projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj",
+        "projectUniqueName": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj",
         "projectName": "system_przesylania_projektow.Core",
-        "projectPath": "F:\\Projekty\\C# Projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj",
+        "projectPath": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj",
         "packagesPath": "C:\\Users\\DST\\.nuget\\packages\\",
-        "outputPath": "F:\\Projekty\\C# Projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\obj\\",
+        "outputPath": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -116,6 +130,20 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -136,14 +164,14 @@
         }
       }
     },
-    "F:\\Projekty\\C# Projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Infrastructure\\system_przesylania_projektow.Infrastructure.csproj": {
+    "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Infrastructure\\system_przesylania_projektow.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projekty\\C# Projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Infrastructure\\system_przesylania_projektow.Infrastructure.csproj",
+        "projectUniqueName": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Infrastructure\\system_przesylania_projektow.Infrastructure.csproj",
         "projectName": "system_przesylania_projektow.Infrastructure",
-        "projectPath": "F:\\Projekty\\C# Projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Infrastructure\\system_przesylania_projektow.Infrastructure.csproj",
+        "projectPath": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Infrastructure\\system_przesylania_projektow.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\DST\\.nuget\\packages\\",
-        "outputPath": "F:\\Projekty\\C# Projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Infrastructure\\obj\\",
+        "outputPath": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -164,8 +192,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "F:\\Projekty\\C# Projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj": {
-                "projectPath": "F:\\Projekty\\C# Projects\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj"
+              "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj": {
+                "projectPath": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj"
               }
             }
           }
@@ -184,6 +212,20 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
