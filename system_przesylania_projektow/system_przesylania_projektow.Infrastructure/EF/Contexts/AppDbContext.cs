@@ -9,7 +9,7 @@ public class AppDbContext : DbContext {
 
     public DbSet<User> Users { get; set; }
     public DbSet<Role> Roles { get; set; }
-    // public DbSet<Repository> Repositories { get; set; }
+    public DbSet<Project> Projects { get; set; }
 
 
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
@@ -20,5 +20,6 @@ public class AppDbContext : DbContext {
 
         builder.ApplyConfiguration<User>(configuration);
         builder.ApplyConfiguration<Role>(configuration);
+        builder.ApplyConfiguration<Project>(configuration);
     }
 }

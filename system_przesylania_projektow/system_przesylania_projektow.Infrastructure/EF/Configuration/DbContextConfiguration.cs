@@ -1,16 +1,13 @@
-﻿
-
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using system_przesylania_projektow.Core.Entities;
 using system_przesylania_projektow.Core.Enums;
 
 namespace system_przesylania_projektow.Infrastructure.EF.Configuration;
 
-public class DbContextConfiguration : IEntityTypeConfiguration<User>, IEntityTypeConfiguration<Role> {
+public class DbContextConfiguration : IEntityTypeConfiguration<User>, IEntityTypeConfiguration<Role>, IEntityTypeConfiguration<Project> {
 
-    public void Configure(EntityTypeBuilder<User> builder)
-    {
+    public void Configure(EntityTypeBuilder<User> builder) {
         builder
             .HasKey(x => x.Id);
         builder
@@ -19,12 +16,16 @@ public class DbContextConfiguration : IEntityTypeConfiguration<User>, IEntityTyp
             .HasForeignKey(x => x.RoleId);
     }
 
-    public void Configure(EntityTypeBuilder<Role> builder)
-    {
+    public void Configure(EntityTypeBuilder<Role> builder) {
         builder
             .HasKey(x => x.Id);
         builder
             .HasData(GetRoles());
+    }
+
+    public void Configure(EntityTypeBuilder<Project> builder) {
+        builder
+            .HasKey(x => x.Id);
     }
 
     private IEnumerable<Role> GetRoles() {

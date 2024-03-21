@@ -17,6 +17,7 @@ public static class Extensions {
         services.AddDbContext<AppDbContext>(ctx => ctx.UseNpgsql(options.ConnectionString));
 
         services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<IProjectRpository, ProjectRpository>();
 
         return services;
     }

@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using system_przesylania_projektow.Application.Requests.UserRequests.GetUser;
 using system_przesylania_projektow.Application.Requests.UserRequests.RegisterUser;
 using system_przesylania_projektow.Application.Requests.UserRequests.SignIn;
 
@@ -29,5 +30,13 @@ public class UserController : ControllerBase
     {
         var token = await _mediator.Send(request);
         return Ok(token);
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetUser()
+    {
+        var request = new GetUserRequest();
+        var user = await _mediator.Send(request);
+        return Ok(user);
     }
 }
