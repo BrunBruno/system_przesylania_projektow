@@ -2,7 +2,6 @@
 
 namespace system_przesylania_projektow.Application.Services;
 
-public interface IJwtService
-{
+public interface IJwtService {
     string GetJwtToken(User user);
 }

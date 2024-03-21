@@ -1,9 +1,7 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using system_przesylania_projektow.Infrastructure.EF.Configuration;
 using system_przesylania_projektow.Core.Entities;
-using System.Reflection.Emit;
+
 
 namespace system_przesylania_projektow.Infrastructure.EF.Contexts;
 
