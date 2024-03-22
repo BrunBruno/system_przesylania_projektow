@@ -5,7 +5,12 @@ using system_przesylania_projektow.Core.Enums;
 
 namespace system_przesylania_projektow.Infrastructure.EF.Configuration;
 
-public class DbContextConfiguration : IEntityTypeConfiguration<User>, IEntityTypeConfiguration<Role>, IEntityTypeConfiguration<Project> {
+public class DbContextConfiguration : IEntityTypeConfiguration<User>,
+                                      IEntityTypeConfiguration<Role>,
+                                      IEntityTypeConfiguration<Project>,
+                                      IEntityTypeConfiguration<ProjectStudent>,
+                                      IEntityTypeConfiguration<ProjectTask> 
+{  
 
     public void Configure(EntityTypeBuilder<User> builder) {
         builder
@@ -26,6 +31,32 @@ public class DbContextConfiguration : IEntityTypeConfiguration<User>, IEntityTyp
     public void Configure(EntityTypeBuilder<Project> builder) {
         builder
             .HasKey(x => x.Id);
+        builder
+            .HasOne(x => x.Owner)
+            .WithMany()
+            .HasForeignKey(x => x.OwnerId);
+    }
+
+    public void Configure(EntityTypeBuilder<ProjectStudent> builder) {
+        builder
+          .HasKey(x => x.Id);
+        builder
+            .HasOne(x => x.Project)
+            .WithMany(x => x.Students)
+            .HasForeignKey(x => x.ProjectId);
+        builder
+            .HasOne(x => x.User)
+            .WithMany()
+            .HasForeignKey(x => x.UserId);
+    }
+
+    public void Configure(EntityTypeBuilder<ProjectTask> builder) {
+        builder
+           .HasKey(x => x.Id);
+        builder
+            .HasOne(x => x.Project)
+            .WithMany(x => x.Tasks)
+            .HasForeignKey(x => x.ProjectId);
     }
 
     private IEnumerable<Role> GetRoles() {
