@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using system_przesylania_projektow.Application.Requests.ProjectRequests.CreateProject;
 using system_przesylania_projektow.Application.Requests.ProjectRequests.DeleteProject;
@@ -18,36 +19,35 @@ public class ProjectController : ControllerBase {
     }
 
     [HttpPost]
+    [Authorize(Roles = "Teacher")]
     public async Task<IActionResult> CreateProject(CreateProjectRequest request) {
-        await _mediator.Send(request);
+        await _mediator.Send(request);   
         return Ok();
     }
 
     [HttpGet]
     public async Task<IActionResult> GetAllProjects(GetAllProjectsRequest request) {
-        var games = await _mediator.Send(request);
-        return Ok(games);
+        var projects = await _mediator.Send(request);
+        return Ok(projects);
     }
 
     [HttpGet("{projectId}")]
     public async Task<IActionResult> GetProject(GetProjectRequest request) {
-        var game = await _mediator.Send(request);
-        return Ok(game);
+        var project = await _mediator.Send(request);
+        return Ok(project);
     }
 
     [HttpPut("{projectId}")]
+    [Authorize(Roles = "Teacher")]
     public async Task<IActionResult> UpdateProject(UpdateProjectRequest request) {
         await _mediator.Send(request);
-
         return Ok();
     }
 
     [HttpDelete("{projectId}")]
+    [Authorize(Roles = "Teacher")]
     public async Task<IActionResult> DeleteProject(DeleteProjectRequest request) {
-
-
         await _mediator.Send(request);
-
         return Ok();
     }
 }

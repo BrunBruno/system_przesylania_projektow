@@ -13,26 +13,30 @@ public  class ProjectRpository : IProjectRpository {
         _dbContext = dbContext;
     }
 
-    public async Task CreateProject(Project game) {
-        await _dbContext.Projects.AddAsync(game);
+    public async Task CreateProject(Project project) {
+        await _dbContext.Projects.AddAsync(project);
         await _dbContext.SaveChangesAsync();
     }
 
     public async Task<Project?> GetProjectById(Guid id)
         => await _dbContext.Projects
+            .Include(x => x.Owner)
+            .Include(x => x.Students)
+            .Include(x => x.Tasks)
             .FirstOrDefaultAsync(x => x.Id == id);
 
     public async Task<IEnumerable<Project>> GetAllProjects()
         => await _dbContext.Projects
+            .Include(x => x.Owner)
             .ToListAsync();
 
-    public async Task UpdateProject(Project order) {
-        _dbContext.Projects.Update(order);
+    public async Task UpdateProject(Project project) {
+        _dbContext.Projects.Update(project);
         await _dbContext.SaveChangesAsync();
     }
 
-    public async Task DeleteProject(Project order) {
-        _dbContext.Projects.Remove(order);
+    public async Task DeleteProject(Project project) {
+        _dbContext.Projects.Remove(project);
         await _dbContext.SaveChangesAsync();
     }
 }

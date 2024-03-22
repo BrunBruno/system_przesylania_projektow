@@ -18,6 +18,7 @@ public static class Extensions {
 
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IProjectRpository, ProjectRpository>();
+        services.AddScoped<IStudentRepository, StudentRepository>();
 
         return services;
     }

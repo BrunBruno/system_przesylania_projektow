@@ -6,35 +6,30 @@ using system_przesylania_projektow.Application.Requests.UserRequests.SignIn;
 
 namespace system_przesylania_projektow.Api.Controllers;
 
-
 [ApiController]
 [Route("api/user")]
-public class UserController : ControllerBase
-{
+public class UserController : ControllerBase {
+
     private readonly IMediator _mediator;
 
-    public UserController(IMediator mediator)
-    {
+    public UserController(IMediator mediator) {
         _mediator = mediator;
     }
 
     [HttpPost("register")]
-    public async Task<IActionResult> RegisterUser(RegisterUserRequest request)
-    {
+    public async Task<IActionResult> RegisterUser(RegisterUserRequest request) {
         await _mediator.Send(request);
         return Ok();
     }
 
     [HttpPost("sign-in")]
-    public async Task<IActionResult> SignIn(SignInRequest request)
-    {
+    public async Task<IActionResult> SignIn(SignInRequest request) {
         var token = await _mediator.Send(request);
         return Ok(token);
     }
 
     [HttpGet]
-    public async Task<IActionResult> GetUser()
-    {
+    public async Task<IActionResult> GetUser() {
         var request = new GetUserRequest();
         var user = await _mediator.Send(request);
         return Ok(user);
