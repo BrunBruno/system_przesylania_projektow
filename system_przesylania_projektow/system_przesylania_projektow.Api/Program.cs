@@ -1,25 +1,22 @@
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
-using System.Security.Claims;
+using system_przesylania_projektow.Infrastructure;
+using system_przesylania_projektow.Application;
+using system_przesylania_projektow.Shared;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddShared();
+builder.Services.AddApplication();
+builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddControllers();
+
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddAuthentication().AddBearerToken(IdentityConstants.BearerScheme);
-builder.Services.AddAuthorizationBuilder();
-
-builder.Services.AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase("AppDb"));
-
-builder.Services.AddIdentityCore<IdentityUser>()
-    .AddEntityFrameworkStores<AppDbContext>()
-    .AddApiEndpoints();
 
 var app = builder.Build();
 
@@ -30,16 +27,16 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors("FrontEndClient");
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
 app.MapControllers();
 
-app.MapIdentityApi<IdentityUser>();
+//app.MapIdentityApi<IdentityUser>();
 
 app.Run();
 
-class AppDbContext : IdentityDbContext<IdentityUser> { 
-    public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
-}
+public partial class Program { }

@@ -1,12 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
+using system_przesylania_projektow.Core.Entities;
 
-namespace system_przesylania_projektow.Application
-{
-    internal class Extensions
-    {
+namespace system_przesylania_projektow.Application;
+
+public static class Extensions {
+    public static IServiceCollection AddApplication(this IServiceCollection services) {
+
+        services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
+
+        services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
+
+        return services;
     }
 }
