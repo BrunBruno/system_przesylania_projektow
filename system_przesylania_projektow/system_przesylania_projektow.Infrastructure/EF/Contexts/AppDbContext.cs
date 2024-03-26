@@ -12,6 +12,7 @@ public class AppDbContext : DbContext {
     public DbSet<Project> Projects { get; set; }
     public DbSet<ProjectTask> Tasks { get; set; }
     public DbSet<ProjectStudent> Students { get; set; }
+    public DbSet<ProjectSolution> Solutions { get; set; }
 
 
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
@@ -24,5 +25,6 @@ public class AppDbContext : DbContext {
         builder.ApplyConfiguration<Project>(configuration);
         builder.ApplyConfiguration<ProjectTask>(configuration);
         builder.ApplyConfiguration<ProjectStudent>(configuration);
+        builder.ApplyConfiguration<ProjectSolution>(configuration);
     }
 }

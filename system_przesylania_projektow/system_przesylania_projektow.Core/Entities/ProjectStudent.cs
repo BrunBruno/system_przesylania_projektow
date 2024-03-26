@@ -11,4 +11,6 @@ public class ProjectStudent {
 
     public Guid UserId { get; set; }
     public User User { get; set; }
+
+    public List<ProjectSolution> Solutions { get; set; }
 }

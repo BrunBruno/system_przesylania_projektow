@@ -9,7 +9,8 @@ public class DbContextConfiguration : IEntityTypeConfiguration<User>,
                                       IEntityTypeConfiguration<Role>,
                                       IEntityTypeConfiguration<Project>,
                                       IEntityTypeConfiguration<ProjectStudent>,
-                                      IEntityTypeConfiguration<ProjectTask> 
+                                      IEntityTypeConfiguration<ProjectTask>,
+                                      IEntityTypeConfiguration<ProjectSolution> 
 {  
 
     public void Configure(EntityTypeBuilder<User> builder) {
@@ -57,6 +58,15 @@ public class DbContextConfiguration : IEntityTypeConfiguration<User>,
             .HasOne(x => x.Project)
             .WithMany(x => x.Tasks)
             .HasForeignKey(x => x.ProjectId);
+    }
+
+    public void Configure(EntityTypeBuilder<ProjectSolution> builder) {
+        builder
+           .HasKey(x => x.Id);
+        builder
+            .HasOne(x => x.Student)
+            .WithMany(x => x.Solutions)
+            .HasForeignKey(x => x.StudentId);
     }
 
     private IEnumerable<Role> GetRoles() {

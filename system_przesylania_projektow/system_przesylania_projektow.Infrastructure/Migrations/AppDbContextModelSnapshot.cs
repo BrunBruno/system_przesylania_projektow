@@ -42,6 +42,37 @@ namespace system_przesylania_projektow.Infrastructure.Migrations
                     b.ToTable("Projects");
                 });
 
+            modelBuilder.Entity("system_przesylania_projektow.Core.Entities.ProjectSolution", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<byte[]>("DocByte")
+                        .IsRequired()
+                        .HasColumnType("bytea");
+
+                    b.Property<string>("FileName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("FileType")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<bool>("IsFinished")
+                        .HasColumnType("boolean");
+
+                    b.Property<Guid>("StudentId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("Solutions");
+                });
+
             modelBuilder.Entity("system_przesylania_projektow.Core.Entities.ProjectStudent", b =>
                 {
                     b.Property<Guid>("Id")
@@ -169,6 +200,17 @@ namespace system_przesylania_projektow.Infrastructure.Migrations
                     b.Navigation("Owner");
                 });
 
+            modelBuilder.Entity("system_przesylania_projektow.Core.Entities.ProjectSolution", b =>
+                {
+                    b.HasOne("system_przesylania_projektow.Core.Entities.ProjectStudent", "Student")
+                        .WithMany("Solutions")
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Student");
+                });
+
             modelBuilder.Entity("system_przesylania_projektow.Core.Entities.ProjectStudent", b =>
                 {
                     b.HasOne("system_przesylania_projektow.Core.Entities.Project", "Project")
@@ -215,6 +257,11 @@ namespace system_przesylania_projektow.Infrastructure.Migrations
                     b.Navigation("Students");
 
                     b.Navigation("Tasks");
+                });
+
+            modelBuilder.Entity("system_przesylania_projektow.Core.Entities.ProjectStudent", b =>
+                {
+                    b.Navigation("Solutions");
                 });
 #pragma warning restore 612, 618
         }

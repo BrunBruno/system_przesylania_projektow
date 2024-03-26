@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using system_przesylania_projektow.Application.Requests.TaskRequests.CreateTask;
+using system_przesylania_projektow.Application.Requests.TaskRequests.DeleteTask;
 
 namespace system_przesylania_projektow.Api.Controllers;
 
@@ -18,6 +19,13 @@ public class TaskController : ControllerBase {
     [HttpPost]
     [Authorize(Roles = "Teacher")]
     public async Task<IActionResult> CreateTask(CreateTaskRequest request) {
+        await _mediator.Send(request);
+        return Ok();
+    }
+
+    [HttpDelete("{taskId}")]
+    [Authorize(Roles = "Teacher")]
+    public async Task<IActionResult> DeleteTask(DeleteTaskRequest request) {
         await _mediator.Send(request);
         return Ok();
     }

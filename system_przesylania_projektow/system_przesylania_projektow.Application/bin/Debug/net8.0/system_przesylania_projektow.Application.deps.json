@@ -687,6 +687,7 @@
       "system_przesylania_projektow.Core/1.0.0": {
         "dependencies": {
           "MediatR": "12.2.0",
+          "Microsoft.AspNetCore.Http.Features": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.3",
           "Microsoft.EntityFrameworkCore.InMemory": "8.0.3",
