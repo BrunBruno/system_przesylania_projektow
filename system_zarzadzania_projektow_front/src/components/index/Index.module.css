@@ -1,0 +1,138 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background-color: #1864ab;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.nav > ul {
+  display: flex;
+  gap: 2rem;
+
+  list-style-type: none;
+  user-select: none;
+  z-index: inherit;
+}
+
+.nav > ul > li {
+  border-bottom: solid #0000 0.1rem;
+  transition: all 0.3s;
+}
+
+.nav > ul > li:hover {
+  cursor: pointer;
+  border-bottom: solid #fff 0.1rem;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #1971c2;
+  border: solid 0.2rem #74c0fc;
+}
+
+.form {
+  height: 100%;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3rem;
+  border-bottom: solid 0.1rem #fff;
+  user-select: none;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  position: relative;
+  width: 100%;
+}
+
+.row > span {
+  font-size: 1.6rem;
+  user-select: none;
+}
+
+.row > input {
+  box-sizing: border-box;
+  padding: 0.2rem 1rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  background-color: #e7f5ff;
+  border: solid 0.3rem #0000;
+  outline: none;
+  border-radius: 0.2rem;
+  text-align: center;
+  color: #1864ab;
+}
+
+.row > .error {
+  padding: 0.3rem 0.6rem;
+  border-radius: 1rem;
+  width: fit-content;
+  background-color: #d0ebff;
+  color: #f00;
+  font-size: 1.2rem;
+  border-top-right-radius: 0;
+  overflow: hidden;
+  max-height: 3.6rem;
+  max-width: 20rem;
+  align-self: flex-end;
+}
+
+.buttons {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  width: 100%;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.buttons > button {
+  width: fit-content;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  background-color: #e7f5ff;
+  border: solid 0.3rem #0000;
+  outline: none;
+  border-radius: 2rem;
+  text-align: center;
+  color: #1864ab;
+  user-select: none;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.buttons > button:hover {
+  cursor: pointer;
+  border: solid 0.3rem #74c0fc;
+}
