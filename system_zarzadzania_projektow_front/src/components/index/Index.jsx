@@ -9,7 +9,13 @@ function Index() {
   return (
     <div className={classes.container}>
       <header className={classes.header}>
-        <p>SYSTEM ZARZĄDZANIA PROJEKTAMI</p>
+        <p
+          onClick={() => {
+            window.location.reload();
+          }}
+        >
+          SYSTEM ZARZĄDZANIA PROJEKTAMI
+        </p>
         <nav className={classes.nav}>
           <ul>
             <li

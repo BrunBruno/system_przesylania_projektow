@@ -41,17 +41,18 @@ public class RegisterUserRequestHandler : IRequestHandler<RegisterUserRequest>
             Id = Guid.NewGuid(),
             Email = request.Email.ToLower(),
             FirstName = request.FirstName,
-            LastName = request.LastName
+            LastName = request.LastName,
+            RoleId = (int)Roles.Student,
         };
 
         var hashedPassword = _passwordHasher.HashPassword(user, request.Password);
         user.PasswordHash = hashedPassword;
 
-        if (emailMatch.Groups["host"].Value.Contains("student")) {
-            user.RoleId = (int)Roles.Student;
-        } else {
-            user.RoleId = (int)Roles.Teacher;
-        }
+        //if (emailMatch.Groups["host"].Value.Contains("student")) {
+        //    user.RoleId = (int)Roles.Student;
+        //} else {
+        //    user.RoleId = (int)Roles.Teacher;
+        //}
 
         await _userRepository.AddUser(user);
     }

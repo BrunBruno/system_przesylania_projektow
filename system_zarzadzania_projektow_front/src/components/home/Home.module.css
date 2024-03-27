@@ -1,5 +1,366 @@
 .container {
   width: 100%;
   height: 100vh;
- 
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10%;
+  aspect-ratio: 1/1;
+  border: solid 2rem #339af0;
+  border-bottom: solid 2rem #0000;
+  border-radius: 100%;
+  animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background-color: #1864ab;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.header > p:hover {
+  cursor: pointer;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 4rem;
+  padding: 4rem;
+  padding-top: calc(4rem + 3.4rem);
+}
+
+.repositories {
+  height: 100%;
+  background-color: rgba(165, 216, 255, 0.8);
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.repositories > ul {
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  gap: 0.5rem;
+}
+
+.repositories > ul > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: #1971c2;
+  text-shadow: 2px 1px #fff;
+}
+
+.repositories > ul > li {
+  max-height: 100%;
+  padding: 1rem;
+  background-color: #1971c2;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  overflow: hidden;
+  background-image: linear-gradient(
+    60deg,
+    rgba(0, 0, 0, 0) 70%,
+    rgba(30, 67, 97, 0.2) 0%
+  );
+}
+
+.repositories > ul > li > h3 {
+  width: fit-content;
+  font-size: 2rem;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 0.5rem;
+}
+
+.repositories > ul > li > div {
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.repositories > ul > li > div > p {
+  font-size: 1.2rem;
+  padding: 0.1rem;
+}
+
+.repositories > ul > li > div > p.e:hover {
+  color: #0f0;
+  cursor: pointer;
+}
+
+.repositories > ul > li > div > p.d:hover {
+  color: #f00;
+  cursor: pointer;
+}
+
+.editor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  background-color: #d0ebff;
+  border: double 0.5rem #1c7ed6;
+  border-radius: 1rem;
+  color: #1864ab;
+  padding: 2rem;
+  background-image: linear-gradient(-10deg, #0000 80%, #a5d8ff 0%);
+}
+
+.editor > h1 {
+  font-size: 3rem;
+  border-bottom: solid 0.3rem #1c7ed6;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  text-shadow: 2px 2px #4dabf7;
+}
+
+.editor > h1 > input {
+  background-color: #0000;
+  font-size: 3rem;
+  color: #1864ab;
+  text-shadow: 2px 2px #4dabf7;
+  border: none;
+  outline: none;
+}
+
+.x {
+  padding: 0rem;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+  border: solid 0.3rem #1c7ed6;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: none;
+}
+
+.x:hover {
+  cursor: pointer;
+  background-color: #1c7ed6;
+  border-color: #74c0fc;
+  color: #74c0fc;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: calc(100% - 6rem);
+  padding-top: 2rem;
+  position: relative;
+}
+
+.split > ul {
+  list-style: none;
+  padding: 1rem;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.split > ul::-webkit-scrollbar {
+  background-color: #0000;
+  width: 0.5rem;
+  border-radius: 1rem;
+}
+
+.split > ul::-webkit-scrollbar-thumb {
+  background-color: #1c7ed6;
+}
+
+.split > ul:nth-child(1) {
+  border-right: solid 0.3rem #1c7ed6;
+}
+
+.split > ul > li {
+  width: 100%;
+  font-size: 1.2rem;
+  border-bottom: solid 0.1rem #1c7ed6;
+  padding: 0.1rem 1.2rem;
+  margin-top: 1rem;
+  position: relative;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.split > ul > li:nth-child(1) {
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0.5 2rem;
+  /* background-color: red; */
+}
+
+.split > ul > li > p:nth-child(1) {
+  font-size: 1.6rem;
+  font-weight: 550;
+}
+.split > ul > li > p:nth-child(2) {
+  font-size: 1.6rem;
+  font-weight: 550;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.split > ul > li > p:nth-child(3) {
+  text-align: justify;
+}
+.split > ul > li > p:nth-child(4) {
+  background-color: rgba(255, 0, 0, 0.7);
+  width: fit-content;
+  align-self: flex-end;
+  padding: 0.5rem;
+  padding-top: 0;
+  border-radius: 0.5rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.split > ul > li > p:nth-child(5) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: 550;
+}
+
+.controls {
+  height: 100%;
+  background-color: #1864ab;
+  border-radius: 0.5rem;
+}
+
+.controls > ul {
+  list-style-type: none;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.controls > ul > li {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #1c7ed6;
+  font-size: 1.4rem;
+  border-radius: 0.2rem;
+  text-align: center;
+}
+
+.controls > ul > li > form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.controls > ul > li > p {
+  border-radius: 0.2rem;
+}
+
+.controls > ul > li > form > button {
+  border-radius: 0.2rem;
+  outline: none;
+  border: none;
+  background-color: #0000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  width: fit-content;
+  align-self: center;
+}
+
+.controls > ul > li > form > button:hover {
+  cursor: pointer;
+  background-color: #e7f5ff;
+  color: #1864ab;
+}
+
+.controls > ul > li > form > input {
+  box-sizing: border-box;
+  padding: 0.2rem 1rem;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  background-color: #e7f5ff;
+  border: solid 0.3rem #0000;
+  outline: none;
+  border-radius: 0.2rem;
+  text-align: center;
+  color: #1864ab;
+}
+
+.controls > ul > li > form > textarea {
+  box-sizing: border-box;
+  padding: 0.2rem 1rem;
+  font-size: 1.4rem;
+  height: 16rem;
+  background-color: #e7f5ff;
+  border: solid 0.3rem #0000;
+  outline: none;
+  border-radius: 0.2rem;
+  color: #1864ab;
+  resize: none;
+}
+
+.controls > ul > li > form > p {
+  padding: 0.5rem;
+}
+
+.controls > ul > li > form > h4 {
+  padding: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.controls > ul > li > div {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding-top: 0.5rem;
+}
+
+.controls > ul > li > div > button {
+  background-color: #0000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.controls > ul > li > div > button:nth-child(1):hover {
+  color: #0f0;
+}
+.controls > ul > li > div > button:nth-child(2):hover {
+  color: #f00;
 }

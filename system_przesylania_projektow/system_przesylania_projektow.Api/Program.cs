@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Identity;
 using system_przesylania_projektow.Infrastructure;
 using system_przesylania_projektow.Application;
 using system_przesylania_projektow.Shared;
@@ -19,6 +18,7 @@ builder.Services.AddSwaggerGen();
 
 
 var app = builder.Build();
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

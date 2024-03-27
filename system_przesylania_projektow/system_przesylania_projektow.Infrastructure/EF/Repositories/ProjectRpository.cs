@@ -28,6 +28,8 @@ public  class ProjectRpository : IProjectRpository {
     public async Task<IEnumerable<Project>> GetAllProjects()
         => await _dbContext.Projects
             .Include(x => x.Owner)
+            .Include(x => x.Students)
+            .Include(x => x.Tasks)
             .ToListAsync();
 
     public async Task UpdateProject(Project project) {

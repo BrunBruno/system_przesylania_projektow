@@ -45,9 +45,11 @@ public class GetProjectRequestHandler : IRequestHandler<GetProjectRequest, GetPr
             Name = project.Name,
             OwnerName = project.Owner.LastName,
             Students = project.Students.Select(s => new StudentDto { 
+                Id = s.Id,
                 Name = s.Name
             }).ToList(),
             Tasks = project.Tasks.Select(t => new TaskDto {
+                Id = t.Id,
                 Name = t.Name,
                 Description = t.Description,
                 EndDate = t.EndDate

@@ -8,11 +8,13 @@ public class GetProjectDto {
     public List<TaskDto> Tasks { get; set; }
 }
 
-public class StudentDto { 
+public class StudentDto {
+    public Guid Id { get; set; }
     public string Name { get; set; }
 }
 
 public class TaskDto {
+    public Guid Id { get; set; }
     public string Name { get; set; }
     public string Description { get; set; }
     public DateTime EndDate { get; set; }

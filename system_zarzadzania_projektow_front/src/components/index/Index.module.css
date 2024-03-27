@@ -17,6 +17,10 @@
   align-items: start;
 }
 
+.header > p:hover {
+  cursor: pointer;
+}
+
 .nav > ul {
   display: flex;
   gap: 2rem;
