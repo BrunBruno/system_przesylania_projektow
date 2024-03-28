@@ -1,0 +1,14 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+.idea
+volumes
+.vs/
+[Mm]igrations/
+FodyWeavers.xml
+FodyWeavers.xsd
+/ExchangeSimulator/ExchangeSimulator.Api/Properties/launchSettings.json
+/ExchangeSimulator/ExchangeSimulator.Api/Properties/launchSettings.json
+/ExchangeSimulator/ExchangeSimulator.Api/Properties/launchSettings.json
