@@ -58,6 +58,7 @@ public class DbContextConfiguration : IEntityTypeConfiguration<User>,
             .HasOne(x => x.Project)
             .WithMany(x => x.Tasks)
             .HasForeignKey(x => x.ProjectId);
+
     }
 
     public void Configure(EntityTypeBuilder<ProjectSolution> builder) {
@@ -67,6 +68,7 @@ public class DbContextConfiguration : IEntityTypeConfiguration<User>,
             .HasOne(x => x.Student)
             .WithMany(x => x.Solutions)
             .HasForeignKey(x => x.StudentId);
+
     }
 
     private IEnumerable<Role> GetRoles() {

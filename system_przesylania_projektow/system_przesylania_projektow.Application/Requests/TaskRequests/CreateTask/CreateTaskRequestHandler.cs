@@ -24,6 +24,7 @@ public class CreateTaskRequestHandler : IRequestHandler<CreateTaskRequest> {
 
         var task = new ProjectTask() {
             Id = Guid.NewGuid(),
+            TaskNo = project.Tasks.Count() + 1,
             Name = request.Name,
             Description = request.Description,
             EndDate = request.EndDate,

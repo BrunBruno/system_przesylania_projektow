@@ -26,27 +26,37 @@ public class ProjectController : ControllerBase {
     }
 
     [HttpGet]
-    public async Task<IActionResult> GetAllProjects(GetAllProjectsRequest request) {
+    public async Task<IActionResult> GetAllProjects([FromQuery] GetAllProjectsRequest request) {
         var projects = await _mediator.Send(request);
         return Ok(projects);
     }
 
     [HttpGet("{projectId}")]
-    public async Task<IActionResult> GetProject(GetProjectRequest request) {
+    public async Task<IActionResult> GetProject([FromRoute] Guid projectId ) {
+        var request = new GetProjectRequest()
+        {
+            ProjectId = projectId,
+            
+        };
         var project = await _mediator.Send(request);
         return Ok(project);
     }
 
     [HttpPut("{projectId}")]
     [Authorize(Roles = "Teacher")]
-    public async Task<IActionResult> UpdateProject(UpdateProjectRequest request) {
+    public async Task<IActionResult> UpdateProject([FromBody] UpdateProjectRequest request) {
+  
         await _mediator.Send(request);
         return Ok();
     }
 
     [HttpDelete("{projectId}")]
     [Authorize(Roles = "Teacher")]
-    public async Task<IActionResult> DeleteProject(DeleteProjectRequest request) {
+    public async Task<IActionResult> DeleteProject([FromRoute] Guid projectId) {
+        var request = new DeleteProjectRequest()
+        {
+            ProjectId = projectId
+        };
         await _mediator.Send(request);
         return Ok();
     }
