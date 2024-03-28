@@ -42,17 +42,12 @@ public class RegisterUserRequestHandler : IRequestHandler<RegisterUserRequest>
             Email = request.Email.ToLower(),
             FirstName = request.FirstName,
             LastName = request.LastName,
+            //RoleId = (int)Roles.Teacher,
             RoleId = (int)Roles.Student,
         };
 
         var hashedPassword = _passwordHasher.HashPassword(user, request.Password);
         user.PasswordHash = hashedPassword;
-
-        //if (emailMatch.Groups["host"].Value.Contains("student")) {
-        //    user.RoleId = (int)Roles.Student;
-        //} else {
-        //    user.RoleId = (int)Roles.Teacher;
-        //}
 
         await _userRepository.AddUser(user);
     }

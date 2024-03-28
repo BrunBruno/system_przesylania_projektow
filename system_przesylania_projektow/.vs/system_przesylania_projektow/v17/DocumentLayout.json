@@ -1,30 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\",
+  "WorkspaceRootPath": "X:\\Szko\u0142a\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|d:\\projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.application\\requests\\projectrequests\\getproject\\getprojectrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|solutionrelative:system_przesylania_projektow.application\\requests\\projectrequests\\getproject\\getprojectrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|x:\\szko\u0142a\\studia\\semestr 6\\waw\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.application\\requests\\projectrequests\\getallprojects\\getallprojectsrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|solutionrelative:system_przesylania_projektow.application\\requests\\projectrequests\\getallprojects\\getallprojectsrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|d:\\projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.application\\requests\\projectrequests\\getproject\\getprojectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|solutionrelative:system_przesylania_projektow.application\\requests\\projectrequests\\getproject\\getprojectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A4B0F26-060F-41C4-A249-1A15ABCB34B6}|system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj|x:\\szko\u0142a\\studia\\semestr 6\\waw\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.core\\entities\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4B0F26-060F-41C4-A249-1A15ABCB34B6}|system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj|solutionrelative:system_przesylania_projektow.core\\entities\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|d:\\projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.application\\requests\\solutionrequests\\deletesolution\\deletesolutionrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|solutionrelative:system_przesylania_projektow.application\\requests\\solutionrequests\\deletesolution\\deletesolutionrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|d:\\projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.application\\requests\\taskrequests\\createtask\\createtaskrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|solutionrelative:system_przesylania_projektow.application\\requests\\taskrequests\\createtask\\createtaskrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{157E8A40-AFFD-438C-8A2E-CBFA30A993D6}|system_przesylania_projektow.Api\\system_przesylania_projektow.Api.csproj|d:\\projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.api\\controllers\\solutioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{157E8A40-AFFD-438C-8A2E-CBFA30A993D6}|system_przesylania_projektow.Api\\system_przesylania_projektow.Api.csproj|solutionrelative:system_przesylania_projektow.api\\controllers\\solutioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{157E8A40-AFFD-438C-8A2E-CBFA30A993D6}|system_przesylania_projektow.Api\\system_przesylania_projektow.Api.csproj|d:\\projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.api\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{157E8A40-AFFD-438C-8A2E-CBFA30A993D6}|system_przesylania_projektow.Api\\system_przesylania_projektow.Api.csproj|solutionrelative:system_przesylania_projektow.api\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|x:\\szko\u0142a\\studia\\semestr 6\\waw\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.application\\requests\\userrequests\\registeruser\\registeruserrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|solutionrelative:system_przesylania_projektow.application\\requests\\userrequests\\registeruser\\registeruserrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,85 +22,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GetProjectRequestHandler.cs",
-              "DocumentMoniker": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\ProjectRequests\\GetProject\\GetProjectRequestHandler.cs",
-              "RelativeDocumentMoniker": "system_przesylania_projektow.Application\\Requests\\ProjectRequests\\GetProject\\GetProjectRequestHandler.cs",
-              "ToolTip": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\ProjectRequests\\GetProject\\GetProjectRequestHandler.cs",
-              "RelativeToolTip": "system_przesylania_projektow.Application\\Requests\\ProjectRequests\\GetProject\\GetProjectRequestHandler.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAowDwAAAA4AAAA",
+              "Title": "GetAllProjectsRequestHandler.cs",
+              "DocumentMoniker": "X:\\Szko\u0142a\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\ProjectRequests\\GetAllProjects\\GetAllProjectsRequestHandler.cs",
+              "RelativeDocumentMoniker": "system_przesylania_projektow.Application\\Requests\\ProjectRequests\\GetAllProjects\\GetAllProjectsRequestHandler.cs",
+              "ToolTip": "X:\\Szko\u0142a\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\ProjectRequests\\GetAllProjects\\GetAllProjectsRequestHandler.cs",
+              "RelativeToolTip": "system_przesylania_projektow.Application\\Requests\\ProjectRequests\\GetAllProjects\\GetAllProjectsRequestHandler.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAowCgAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T13:48:01.575Z",
+              "WhenOpened": "2024-03-28T18:49:09.392Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GetProjectDto.cs",
-              "DocumentMoniker": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\ProjectRequests\\GetProject\\GetProjectDto.cs",
-              "RelativeDocumentMoniker": "system_przesylania_projektow.Application\\Requests\\ProjectRequests\\GetProject\\GetProjectDto.cs",
-              "ToolTip": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\ProjectRequests\\GetProject\\GetProjectDto.cs",
-              "RelativeToolTip": "system_przesylania_projektow.Application\\Requests\\ProjectRequests\\GetProject\\GetProjectDto.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAxwBQAAAAJAAAA",
+              "Title": "Project.cs",
+              "DocumentMoniker": "X:\\Szko\u0142a\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\Entities\\Project.cs",
+              "RelativeDocumentMoniker": "system_przesylania_projektow.Core\\Entities\\Project.cs",
+              "ToolTip": "X:\\Szko\u0142a\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\Entities\\Project.cs",
+              "RelativeToolTip": "system_przesylania_projektow.Core\\Entities\\Project.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T13:47:38.671Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CreateTaskRequestHandler.cs",
-              "DocumentMoniker": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\TaskRequests\\CreateTask\\CreateTaskRequestHandler.cs",
-              "RelativeDocumentMoniker": "system_przesylania_projektow.Application\\Requests\\TaskRequests\\CreateTask\\CreateTaskRequestHandler.cs",
-              "ToolTip": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\TaskRequests\\CreateTask\\CreateTaskRequestHandler.cs",
-              "RelativeToolTip": "system_przesylania_projektow.Application\\Requests\\TaskRequests\\CreateTask\\CreateTaskRequestHandler.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T13:44:01.673Z",
+              "WhenOpened": "2024-03-28T18:47:25.098Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DeleteSolutionRequestHandler.cs",
-              "DocumentMoniker": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\SolutionRequests\\DeleteSolution\\DeleteSolutionRequestHandler.cs",
-              "RelativeDocumentMoniker": "system_przesylania_projektow.Application\\Requests\\SolutionRequests\\DeleteSolution\\DeleteSolutionRequestHandler.cs",
-              "ToolTip": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\SolutionRequests\\DeleteSolution\\DeleteSolutionRequestHandler.cs",
-              "RelativeToolTip": "system_przesylania_projektow.Application\\Requests\\SolutionRequests\\DeleteSolution\\DeleteSolutionRequestHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABKAAAA",
+              "Title": "RegisterUserRequestHandler.cs",
+              "DocumentMoniker": "X:\\Szko\u0142a\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\UserRequests\\RegisterUser\\RegisterUserRequestHandler.cs",
+              "RelativeDocumentMoniker": "system_przesylania_projektow.Application\\Requests\\UserRequests\\RegisterUser\\RegisterUserRequestHandler.cs",
+              "ToolTip": "X:\\Szko\u0142a\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\UserRequests\\RegisterUser\\RegisterUserRequestHandler.cs",
+              "RelativeToolTip": "system_przesylania_projektow.Application\\Requests\\UserRequests\\RegisterUser\\RegisterUserRequestHandler.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAIwDAAAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T13:14:49.746Z",
+              "WhenOpened": "2024-03-28T18:34:16.364Z",
               "EditorCaption": ""
-            },
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1285,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TaskController.cs",
-              "DocumentMoniker": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Api\\Controllers\\TaskController.cs",
-              "RelativeDocumentMoniker": "system_przesylania_projektow.Api\\Controllers\\TaskController.cs",
-              "ToolTip": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Api\\Controllers\\TaskController.cs",
-              "RelativeToolTip": "system_przesylania_projektow.Api\\Controllers\\TaskController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T13:11:28.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SolutionController.cs",
-              "DocumentMoniker": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Api\\Controllers\\SolutionController.cs",
-              "RelativeDocumentMoniker": "system_przesylania_projektow.Api\\Controllers\\SolutionController.cs",
-              "ToolTip": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Api\\Controllers\\SolutionController.cs",
-              "RelativeToolTip": "system_przesylania_projektow.Api\\Controllers\\SolutionController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB4AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T13:11:25.642Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

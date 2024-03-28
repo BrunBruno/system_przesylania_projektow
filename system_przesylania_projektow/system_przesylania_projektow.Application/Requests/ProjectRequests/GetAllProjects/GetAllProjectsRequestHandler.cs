@@ -38,7 +38,7 @@ public class GetAllProjectsRequestHandler : IRequestHandler<GetAllProjectsReques
                 (p.Owner.FirstName + " " + p.Owner.LastName).Contains(request.Name, StringComparison.OrdinalIgnoreCase));
         }
 
-        var projectDtos = projects.Select(project => new GetAllProjectsDto {
+        var projectDtos = projects.OrderByDescending(p => p.CreationDate).Select(project => new GetAllProjectsDto {
             Id = project.Id,
             Name = project.Name,
             OwnerName = project.Owner.FirstName + " " + project.Owner.LastName,
