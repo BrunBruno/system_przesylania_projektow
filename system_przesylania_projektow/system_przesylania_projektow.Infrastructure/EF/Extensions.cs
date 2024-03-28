@@ -15,6 +15,7 @@ public static class Extensions {
         var options = configuration.GetOptions<PostgresOptions>("Postgres");
 
         services.AddDbContext<AppDbContext>(ctx => ctx.UseNpgsql(options.ConnectionString));
+        
 
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IProjectRpository, ProjectRpository>();

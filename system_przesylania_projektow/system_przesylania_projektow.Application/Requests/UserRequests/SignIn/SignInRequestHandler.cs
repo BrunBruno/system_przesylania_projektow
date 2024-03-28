@@ -23,13 +23,13 @@ public class SignInRequestHandler : IRequestHandler<SignInRequest, SignInDto> {
         var user = await _userRepository.GetUserByEmail(request.Email.ToLower());
 
         if (user is null){
-            throw new BadRequestException("Invalid email or password.");
+            throw new BadRequestException("Nieprawidłowy email lub hasło.");
         }
 
         var result = _passwordHasher.VerifyHashedPassword(user, user.PasswordHash, request.Password);
 
         if (result == PasswordVerificationResult.Failed) {
-            throw new BadRequestException("Invalid email or password");
+            throw new BadRequestException("Nieprawidłowy email lub hasło.");
         }
 
         var token = _jwtService.GetJwtToken(user);

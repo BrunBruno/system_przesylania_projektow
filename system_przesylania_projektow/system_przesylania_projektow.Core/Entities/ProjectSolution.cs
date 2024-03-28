@@ -10,4 +10,8 @@ public class ProjectSolution {
 
     public Guid StudentId { get; set; }
     public ProjectStudent Student { get; set; }
+
+    public Guid TaskId { get; set; }
+
+
 }

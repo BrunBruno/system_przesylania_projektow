@@ -23,7 +23,10 @@ public class SolutionController : ControllerBase {
 
     [HttpDelete("{solutionId}")]
     [Authorize(Roles = "Student")]
-    public async Task<IActionResult> DeleteSolution(DeleteSolutionRequest request) {
+    public async Task<IActionResult> DeleteSolution([FromRoute] Guid solutionId) {
+        var request = new DeleteSolutionRequest() {
+            SolutionId = solutionId,
+        };
         await _mediator.Send(request);
         return Ok();
     }

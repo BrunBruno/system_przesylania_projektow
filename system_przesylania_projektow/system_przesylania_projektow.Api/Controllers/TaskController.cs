@@ -25,7 +25,11 @@ public class TaskController : ControllerBase {
 
     [HttpDelete("{taskId}")]
     [Authorize(Roles = "Teacher")]
-    public async Task<IActionResult> DeleteTask(DeleteTaskRequest request) {
+    public async Task<IActionResult> DeleteTask([FromRoute] Guid taskId) {
+        var request = new DeleteTaskRequest()
+        {
+            TaskId = taskId
+        };
         await _mediator.Send(request);
         return Ok();
     }

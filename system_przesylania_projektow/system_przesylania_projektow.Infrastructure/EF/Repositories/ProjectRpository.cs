@@ -22,12 +22,15 @@ public  class ProjectRpository : IProjectRpository {
         => await _dbContext.Projects
             .Include(x => x.Owner)
             .Include(x => x.Students)
+            .ThenInclude(s => s.Solutions)
             .Include(x => x.Tasks)
             .FirstOrDefaultAsync(x => x.Id == id);
 
     public async Task<IEnumerable<Project>> GetAllProjects()
         => await _dbContext.Projects
             .Include(x => x.Owner)
+            .Include(x => x.Students)
+            .Include(x => x.Tasks)
             .ToListAsync();
 
     public async Task UpdateProject(Project project) {

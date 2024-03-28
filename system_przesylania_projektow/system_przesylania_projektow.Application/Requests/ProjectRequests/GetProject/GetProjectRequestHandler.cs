@@ -38,6 +38,8 @@ public class GetProjectRequestHandler : IRequestHandler<GetProjectRequest, GetPr
             if (!student.IsAccepted) {
                 throw new BadRequestException("Student nie został jeszcze zaakceptowany.");
             }
+        } else if(project.Owner.Id  != userId) {
+            throw new UnauthorizedAccessException("Nie jesteś właścicielem tego projektu.");
         }
 
         var projectDto = new GetProjectDto {
@@ -45,12 +47,24 @@ public class GetProjectRequestHandler : IRequestHandler<GetProjectRequest, GetPr
             Name = project.Name,
             OwnerName = project.Owner.LastName,
             Students = project.Students.Select(s => new StudentDto { 
-                Name = s.Name
+                Id = s.Id,
+                Name = s.Name,
+                IsAccepted = s.IsAccepted,
+                userId = s.UserId,
+                Solutions = s.Solutions.Select(sol => new SolutionDto {
+                    Id = sol.Id,
+                    FileName = sol.FileName,
+                    FileType = sol.FileType,
+                    TaskId = sol.TaskId,
+                }).ToList()
             }).ToList(),
-            Tasks = project.Tasks.Select(t => new TaskDto {
+            Tasks = project.Tasks.OrderBy(t => t.TaskNo).Select(t => new TaskDto {
+                Id = t.Id,
+                TaskNo = t.TaskNo,
                 Name = t.Name,
                 Description = t.Description,
-                EndDate = t.EndDate
+                EndDate = t.EndDate,
+            
             }).ToList()
         };
 
