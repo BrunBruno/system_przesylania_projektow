@@ -5,8 +5,14 @@ import { baseUrl, authorization } from "../../ApiOptions.js";
 import classes from "./Home.module.css";
 
 function Home() {
+  const roles = {
+    student: 1,
+    teacher: 2,
+  };
+
   const navigate = useNavigate();
   const [authorize, setAuthorize] = useState(false);
+  const [userInfo, setUserInfo] = useState(null);
 
   useEffect(() => {
     const verifyUsersToken = async () => {
@@ -18,6 +24,7 @@ function Home() {
           );
 
           localStorage.setItem("userInfo", JSON.stringify(user.data));
+          setUserInfo(user.data);
 
           setAuthorize(true);
         } catch (err) {
@@ -53,20 +60,16 @@ function Home() {
   const [currentName, setCurrentName] = useState("");
 
   const [projectList, setProjectList] = useState([]);
-  const [totalPages, setTotalPages] = useState(0);
-  const [totalProjects, setTotalProjects] = useState(0);
 
   const GetProjects = useCallback(async () => {
     try {
       const projects = await axios.get(
-        `${baseUrl}/project?name=${currentName}&pageNumber=1&ElementsCount=8`,
+        `${baseUrl}/project?name=${currentName}`,
 
         authorization(localStorage.getItem("token"))
       );
 
-      setProjectList(projects.data.items);
-      setTotalPages(projects.data.totalPages);
-      setTotalProjects(projects.data.totalItemsCount);
+      setProjectList(projects.data);
     } catch (err) {
       console.log(err);
     }
@@ -101,6 +104,7 @@ function Home() {
   };
 
   const searchProject = (event) => {
+    setSelectedProject(null);
     setCurrentName(event.target.value.toLowerCase());
   };
 
@@ -137,8 +141,6 @@ function Home() {
         name: event.target.value,
       };
 
-      console.log(projectToUodate);
-
       await axios.put(
         `${baseUrl}/project/${selectedProject.id}`,
         projectToUodate,
@@ -173,9 +175,108 @@ function Home() {
   };
   const deleteTask = async (id) => {
     try {
-      console.log(id);
       await axios.delete(
         `${baseUrl}/task/${id}`,
+        authorization(localStorage.getItem("token"))
+      );
+
+      editProject(selectedProject.id);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  const joinStudent = async (id) => {
+    try {
+      await axios.post(
+        `${baseUrl}/student/join`,
+        { projectId: id },
+        authorization(localStorage.getItem("token"))
+      );
+
+      GetProjects();
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  const acceptStudent = async (studentId) => {
+    try {
+      await axios.put(
+        `${baseUrl}/student/accept`,
+        { studentId: studentId },
+        authorization(localStorage.getItem("token"))
+      );
+
+      editProject(selectedProject.id);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  const checkStudent = (project) => {
+    const student = project.students.filter(
+      (student) => student.userId === userInfo.id
+    )[0];
+
+    if (student) {
+      if (student.isAccepted) {
+        return (
+          <p className={classes.e} onClick={() => editProject(project.id)}>
+            Przeglądaj projekt
+          </p>
+        );
+      } else {
+        return (
+          <span style={{ color: "#fcc419", fontSize: "1.2rem" }}>
+            Oczekiwanie na akceptacje...
+          </span>
+        );
+      }
+    } else {
+      return (
+        <p className={classes.e} onClick={() => joinStudent(project.id)}>
+          Dołącz do projectu
+        </p>
+      );
+    }
+  };
+
+  const addSolution = async (event, taskId) => {
+    try {
+      const file = event.target.files[0];
+      const formData = new FormData();
+
+      formData.append("projectId", selectedProject.id);
+      formData.append("taskId", taskId);
+      formData.append("file", file);
+
+      await axios.post(`${baseUrl}/solution`, formData, {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+          "Content-Type": "multipart/form-data",
+        },
+      });
+
+      editProject(selectedProject.id);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  const searchSolutions = (taskId) => {
+    const student = selectedProject.students.filter(
+      (s) => s.userId === userInfo.id
+    )[0];
+    const solutions = student.solutions.filter((s) => s.taskId === taskId);
+
+    return solutions;
+  };
+
+  const deleteSolution = async (solutionId) => {
+    try {
+      await axios.delete(
+        `${baseUrl}/solution/${solutionId}`,
         authorization(localStorage.getItem("token"))
       );
 
@@ -200,7 +301,10 @@ function Home() {
           SYSTEM ZARZĄDZANIA PROJEKTAMI
         </p>
 
-        <p onClick={onLogOut}>LogOut</p>
+        <nav>
+          <p>{userInfo.email}</p>
+          <p onClick={onLogOut}>LogOut</p>
+        </nav>
       </header>
 
       <div className={classes.content}>
@@ -228,35 +332,95 @@ function Home() {
                 </p>
               </h1>
               <div className={classes.split}>
-                <ul>
+                <ul className={classes.tasks}>
                   <li>ZADANIA</li>
                   {selectedProject.tasks.map((task, ti) => (
-                    <li key={ti}>
-                      <p>Zadanie #{ti + 1} </p>
+                    <li key={task.id}>
+                      <p>Zadanie #{task.taskNo} </p>
                       <p>{task.name}</p>
                       <p>{task.description}</p>
-                      <p onClick={() => deleteTask(task.id)}>
-                        __
-                        <br />
-                        ||
+                      {userInfo.role === roles.teacher && (
+                        <p
+                          onClick={() => deleteTask(task.id)}
+                          className={classes.bin}
+                        >
+                          __
+                          <br />
+                          ||
+                        </p>
+                      )}
+                      <p className={classes.date}>
+                        {new Date(task.endDate).toLocaleDateString()}
                       </p>
-                      <p>{new Date(task.endDate).toLocaleDateString()}</p>
                     </li>
                   ))}
                 </ul>
-                <ul>
-                  <li>STUDENCI</li>
-                  {selectedProject.students.map((student, si) => (
-                    <li key={si}></li>
-                  ))}
-                </ul>
+                {userInfo.role === roles.teacher ? (
+                  <ul className={classes.students}>
+                    <li>STUDENCI</li>
+                    {selectedProject.students.map((student, si) => (
+                      <li key={student.id}>
+                        <p>{student.name}</p>
+                        <p>Zadania:</p>
+                        <div className={classes["stud-tasks"]}>
+                          {student.solutions.map((solution, soli) => (
+                            <p key={solution.id}>
+                              .{solution.fileName.split(".").pop()}
+                              <span>{solution.fileName}</span>
+                            </p>
+                          ))}
+                        </div>
+                        {!student.isAccepted && (
+                          <p
+                            className={classes.accept}
+                            onClick={() => acceptStudent(student.id)}
+                          >
+                            Zaakceptuj
+                          </p>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <ul className={classes.answers}>
+                    <li>Dodaj rozwiązanie</li>
+                    {selectedProject.tasks.map((task, ti) => (
+                      <li key={task.id}>
+                        <p>Zadanie #{task.taskNo}</p>
+                        <p>{task.name}</p>
+                        <p className={classes["p-solutions"]}>
+                          {searchSolutions(task.id).map((solution, si) => (
+                            <span key={solution.id}>
+                              <span>{solution.fileName}</span>
+                              <button
+                                onClick={() => deleteSolution(solution.id)}
+                              >
+                                x
+                              </button>
+                            </span>
+                          ))}
+                        </p>
+                        <label>
+                          Dodaj plik
+                          <input
+                            type="file"
+                            name="solution"
+                            onChange={(e) => {
+                              addSolution(e, task.id);
+                            }}
+                          />
+                        </label>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </div>
           )}
           <ul>
             {projectList.length > 0 ? (
               projectList.map((project, i) => (
-                <li key={i}>
+                <li key={project.id}>
                   <h3>{project.name}</h3>
                   <div>
                     <p>Prowadzący: </p>
@@ -266,20 +430,17 @@ function Home() {
                     <p>Ilczba uczestników: {project.studentCount}</p>
                     <p>Ilczba zadań: {project.taskCount}</p>
                   </div>
-                  <div>
-                    <p
-                      className={classes.e}
-                      onClick={() => editProject(project.id)}
-                    >
-                      Edytuj repozytorum
-                    </p>
-                    <p
-                      className={classes.d}
-                      onClick={() => setProjectToDelete(project.id)}
-                    >
-                      Usuń repozytorium
-                    </p>
-                  </div>
+                  {userInfo.role === roles.teacher ? (
+                    <div className={classes.buttons}>
+                      <p onClick={() => editProject(project.id)}>Edytuj</p>
+                      <p>Exportuj</p>
+                      <p onClick={() => setProjectToDelete(project.id)}>Usuń</p>
+                    </div>
+                  ) : (
+                    <div className={classes.buttons}>
+                      {checkStudent(project)}
+                    </div>
+                  )}
                   <div></div>
                 </li>
               ))
@@ -290,15 +451,17 @@ function Home() {
         </div>
         <div className={classes.controls}>
           <ul>
-            <li>
-              <form onSubmit={createProject}>
-                <h4>Stwórz repozytorium</h4>
-                <input placeholder="Nazwa Repozytorium" name="name" />
-                <button className={classes.pb} type="submit">
-                  Utwórz
-                </button>
-              </form>
-            </li>
+            {userInfo.role === roles.teacher && (
+              <li>
+                <form onSubmit={createProject}>
+                  <h4>Stwórz repozytorium</h4>
+                  <input placeholder="Nazwa Repozytorium" name="name" />
+                  <button className={classes.pb} type="submit">
+                    Utwórz
+                  </button>
+                </form>
+              </li>
+            )}
             <li>
               <form>
                 <h4>Szukaj repozytorium</h4>
@@ -308,7 +471,7 @@ function Home() {
                 />
               </form>
             </li>
-            {selectedProject && (
+            {selectedProject && userInfo.role === roles.teacher && (
               <li>
                 <form onSubmit={addTask}>
                   <h4>Dodaj zadanie</h4>

@@ -60,10 +60,10 @@ namespace system_przesylania_projektow.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<bool>("IsFinished")
-                        .HasColumnType("boolean");
-
                     b.Property<Guid>("StudentId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("TaskId")
                         .HasColumnType("uuid");
 
                     b.HasKey("Id");
@@ -120,6 +120,9 @@ namespace system_przesylania_projektow.Infrastructure.Migrations
 
                     b.Property<Guid>("ProjectId")
                         .HasColumnType("uuid");
+
+                    b.Property<int>("TaskNo")
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 

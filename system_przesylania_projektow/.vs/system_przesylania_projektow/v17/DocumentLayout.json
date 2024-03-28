@@ -11,24 +11,20 @@
       "RelativeMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|solutionrelative:system_przesylania_projektow.application\\requests\\projectrequests\\getproject\\getprojectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{157E8A40-AFFD-438C-8A2E-CBFA30A993D6}|system_przesylania_projektow.Api\\system_przesylania_projektow.Api.csproj|d:\\projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.api\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{157E8A40-AFFD-438C-8A2E-CBFA30A993D6}|system_przesylania_projektow.Api\\system_przesylania_projektow.Api.csproj|solutionrelative:system_przesylania_projektow.api\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{157E8A40-AFFD-438C-8A2E-CBFA30A993D6}|system_przesylania_projektow.Api\\system_przesylania_projektow.Api.csproj|d:\\projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{157E8A40-AFFD-438C-8A2E-CBFA30A993D6}|system_przesylania_projektow.Api\\system_przesylania_projektow.Api.csproj|solutionrelative:system_przesylania_projektow.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|d:\\projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.application\\requests\\solutionrequests\\deletesolution\\deletesolutionrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|solutionrelative:system_przesylania_projektow.application\\requests\\solutionrequests\\deletesolution\\deletesolutionrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|d:\\projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.application\\requests\\taskrequests\\createtask\\createtaskrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|solutionrelative:system_przesylania_projektow.application\\requests\\taskrequests\\createtask\\createtaskrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|d:\\projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.application\\requests\\taskrequests\\createtask\\createtaskrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|solutionrelative:system_przesylania_projektow.application\\requests\\taskrequests\\createtask\\createtaskrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{157E8A40-AFFD-438C-8A2E-CBFA30A993D6}|system_przesylania_projektow.Api\\system_przesylania_projektow.Api.csproj|d:\\projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.api\\controllers\\solutioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{157E8A40-AFFD-438C-8A2E-CBFA30A993D6}|system_przesylania_projektow.Api\\system_przesylania_projektow.Api.csproj|solutionrelative:system_przesylania_projektow.api\\controllers\\solutioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ACAF0DF5-D982-43BC-B0E4-888E5170B250}|system_przesylania_projektow.Infrastructure\\system_przesylania_projektow.Infrastructure.csproj|d:\\projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.infrastructure\\ef\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACAF0DF5-D982-43BC-B0E4-888E5170B250}|system_przesylania_projektow.Infrastructure\\system_przesylania_projektow.Infrastructure.csproj|solutionrelative:system_przesylania_projektow.infrastructure\\ef\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{157E8A40-AFFD-438C-8A2E-CBFA30A993D6}|system_przesylania_projektow.Api\\system_przesylania_projektow.Api.csproj|d:\\projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.api\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{157E8A40-AFFD-438C-8A2E-CBFA30A993D6}|system_przesylania_projektow.Api\\system_przesylania_projektow.Api.csproj|solutionrelative:system_przesylania_projektow.api\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -48,9 +44,9 @@
               "RelativeDocumentMoniker": "system_przesylania_projektow.Application\\Requests\\ProjectRequests\\GetProject\\GetProjectRequestHandler.cs",
               "ToolTip": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\ProjectRequests\\GetProject\\GetProjectRequestHandler.cs",
               "RelativeToolTip": "system_przesylania_projektow.Application\\Requests\\ProjectRequests\\GetProject\\GetProjectRequestHandler.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAA1wC8AAAAaAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowDwAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T13:46:16.577Z",
+              "WhenOpened": "2024-03-28T13:48:01.575Z",
               "EditorCaption": ""
             },
             {
@@ -61,74 +57,61 @@
               "RelativeDocumentMoniker": "system_przesylania_projektow.Application\\Requests\\ProjectRequests\\GetProject\\GetProjectDto.cs",
               "ToolTip": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\ProjectRequests\\GetProject\\GetProjectDto.cs",
               "RelativeToolTip": "system_przesylania_projektow.Application\\Requests\\ProjectRequests\\GetProject\\GetProjectDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAgAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAxwBQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T13:12:05.472Z",
+              "WhenOpened": "2024-03-28T13:47:38.671Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Api\\Program.cs",
-              "RelativeDocumentMoniker": "system_przesylania_projektow.Api\\Program.cs",
-              "ToolTip": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Api\\Program.cs",
-              "RelativeToolTip": "system_przesylania_projektow.Api\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T13:09:02.757Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Extensions.cs",
-              "DocumentMoniker": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Infrastructure\\EF\\Extensions.cs",
-              "RelativeDocumentMoniker": "system_przesylania_projektow.Infrastructure\\EF\\Extensions.cs",
-              "ToolTip": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Infrastructure\\EF\\Extensions.cs",
-              "RelativeToolTip": "system_przesylania_projektow.Infrastructure\\EF\\Extensions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T13:07:40.783Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "CreateTaskRequestHandler.cs",
               "DocumentMoniker": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\TaskRequests\\CreateTask\\CreateTaskRequestHandler.cs",
               "RelativeDocumentMoniker": "system_przesylania_projektow.Application\\Requests\\TaskRequests\\CreateTask\\CreateTaskRequestHandler.cs",
               "ToolTip": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\TaskRequests\\CreateTask\\CreateTaskRequestHandler.cs",
               "RelativeToolTip": "system_przesylania_projektow.Application\\Requests\\TaskRequests\\CreateTask\\CreateTaskRequestHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAIAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T12:59:26.025Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CreateTaskRequest.cs",
-              "DocumentMoniker": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\TaskRequests\\CreateTask\\CreateTaskRequest.cs",
-              "RelativeDocumentMoniker": "system_przesylania_projektow.Application\\Requests\\TaskRequests\\CreateTask\\CreateTaskRequest.cs",
-              "ToolTip": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\TaskRequests\\CreateTask\\CreateTaskRequest.cs",
-              "RelativeToolTip": "system_przesylania_projektow.Application\\Requests\\TaskRequests\\CreateTask\\CreateTaskRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T12:57:17.269Z",
+              "WhenOpened": "2024-03-28T13:44:01.673Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "DeleteSolutionRequestHandler.cs",
+              "DocumentMoniker": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\SolutionRequests\\DeleteSolution\\DeleteSolutionRequestHandler.cs",
+              "RelativeDocumentMoniker": "system_przesylania_projektow.Application\\Requests\\SolutionRequests\\DeleteSolution\\DeleteSolutionRequestHandler.cs",
+              "ToolTip": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\SolutionRequests\\DeleteSolution\\DeleteSolutionRequestHandler.cs",
+              "RelativeToolTip": "system_przesylania_projektow.Application\\Requests\\SolutionRequests\\DeleteSolution\\DeleteSolutionRequestHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T13:14:49.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "TaskController.cs",
               "DocumentMoniker": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Api\\Controllers\\TaskController.cs",
               "RelativeDocumentMoniker": "system_przesylania_projektow.Api\\Controllers\\TaskController.cs",
               "ToolTip": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Api\\Controllers\\TaskController.cs",
               "RelativeToolTip": "system_przesylania_projektow.Api\\Controllers\\TaskController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAKAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T12:55:34.429Z",
+              "WhenOpened": "2024-03-28T13:11:28.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SolutionController.cs",
+              "DocumentMoniker": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Api\\Controllers\\SolutionController.cs",
+              "RelativeDocumentMoniker": "system_przesylania_projektow.Api\\Controllers\\SolutionController.cs",
+              "ToolTip": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Api\\Controllers\\SolutionController.cs",
+              "RelativeToolTip": "system_przesylania_projektow.Api\\Controllers\\SolutionController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T13:11:25.642Z",
               "EditorCaption": ""
             }
           ]

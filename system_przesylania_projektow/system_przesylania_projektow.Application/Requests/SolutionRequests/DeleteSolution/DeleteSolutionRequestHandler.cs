@@ -22,10 +22,6 @@ public class DeleteSolutionRequestHandler : IRequestHandler<DeleteSolutionReques
         var solutionToDelete = await _solutionRepository.GetSolutionById(request.SolutionId)
             ?? throw new NotFoundException("Nie znaleziono rozwiązania.");
 
-        if (solutionToDelete.StudentId != userId) {
-            throw new BadRequestException("Nie jesteś właścicielem tego roziązania.");
-        }
-
         await _solutionRepository.DeleteSolution(solutionToDelete);
     }
 }
