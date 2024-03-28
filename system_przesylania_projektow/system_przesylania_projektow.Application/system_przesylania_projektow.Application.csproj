@@ -25,4 +25,8 @@
     <ProjectReference Include="..\system_przesylania_projektow.Shared\system_przesylania_projektow.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Requests\SolutionRequests\DownloadAllSoludtions\" />
+  </ItemGroup>
+
 </Project>

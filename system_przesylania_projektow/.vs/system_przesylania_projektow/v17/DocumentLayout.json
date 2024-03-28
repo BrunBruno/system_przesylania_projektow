@@ -1,7 +1,40 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "X:\\Szko\u0142a\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{157E8A40-AFFD-438C-8A2E-CBFA30A993D6}|system_przesylania_projektow.Api\\system_przesylania_projektow.Api.csproj|x:\\szko\u0142a\\studia\\semestr 6\\waw\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.api\\controllers\\solutioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{157E8A40-AFFD-438C-8A2E-CBFA30A993D6}|system_przesylania_projektow.Api\\system_przesylania_projektow.Api.csproj|solutionrelative:system_przesylania_projektow.api\\controllers\\solutioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|x:\\szko\u0142a\\studia\\semestr 6\\waw\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.application\\requests\\solutionrequests\\downloadsolution\\downloadsolutiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|solutionrelative:system_przesylania_projektow.application\\requests\\solutionrequests\\downloadsolution\\downloadsolutiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|x:\\szko\u0142a\\studia\\semestr 6\\waw\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.application\\requests\\solutionrequests\\addsolution\\addsolutionrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|solutionrelative:system_przesylania_projektow.application\\requests\\solutionrequests\\addsolution\\addsolutionrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|x:\\szko\u0142a\\studia\\semestr 6\\waw\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.application\\requests\\solutionrequests\\addsolution\\addsolutionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|solutionrelative:system_przesylania_projektow.application\\requests\\solutionrequests\\addsolution\\addsolutionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|x:\\szko\u0142a\\studia\\semestr 6\\waw\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.application\\requests\\solutionrequests\\downloadsolution\\downloadsolutionrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|solutionrelative:system_przesylania_projektow.application\\requests\\solutionrequests\\downloadsolution\\downloadsolutionrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4B0F26-060F-41C4-A249-1A15ABCB34B6}|system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj|x:\\szko\u0142a\\studia\\semestr 6\\waw\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.core\\entities\\projectsolution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4B0F26-060F-41C4-A249-1A15ABCB34B6}|system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj|solutionrelative:system_przesylania_projektow.core\\entities\\projectsolution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|x:\\szko\u0142a\\studia\\semestr 6\\waw\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.application\\repositories\\isolutionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|solutionrelative:system_przesylania_projektow.application\\repositories\\isolutionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|x:\\szko\u0142a\\studia\\semestr 6\\waw\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.application\\requests\\solutionrequests\\downloadsolution\\downloadsolutionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|solutionrelative:system_przesylania_projektow.application\\requests\\solutionrequests\\downloadsolution\\downloadsolutionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +42,115 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddSolutionRequest.cs",
+              "DocumentMoniker": "X:\\Szko\u0142a\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\SolutionRequests\\AddSolution\\AddSolutionRequest.cs",
+              "RelativeDocumentMoniker": "system_przesylania_projektow.Application\\Requests\\SolutionRequests\\AddSolution\\AddSolutionRequest.cs",
+              "ToolTip": "X:\\Szko\u0142a\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\SolutionRequests\\AddSolution\\AddSolutionRequest.cs",
+              "RelativeToolTip": "system_przesylania_projektow.Application\\Requests\\SolutionRequests\\AddSolution\\AddSolutionRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T20:10:32.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddSolutionRequestHandler.cs",
+              "DocumentMoniker": "X:\\Szko\u0142a\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\SolutionRequests\\AddSolution\\AddSolutionRequestHandler.cs",
+              "RelativeDocumentMoniker": "system_przesylania_projektow.Application\\Requests\\SolutionRequests\\AddSolution\\AddSolutionRequestHandler.cs",
+              "ToolTip": "X:\\Szko\u0142a\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\SolutionRequests\\AddSolution\\AddSolutionRequestHandler.cs",
+              "RelativeToolTip": "system_przesylania_projektow.Application\\Requests\\SolutionRequests\\AddSolution\\AddSolutionRequestHandler.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAcwCkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T20:10:29.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ISolutionRepository.cs",
+              "DocumentMoniker": "X:\\Szko\u0142a\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Repositories\\ISolutionRepository.cs",
+              "RelativeDocumentMoniker": "system_przesylania_projektow.Application\\Repositories\\ISolutionRepository.cs",
+              "ToolTip": "X:\\Szko\u0142a\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Repositories\\ISolutionRepository.cs",
+              "RelativeToolTip": "system_przesylania_projektow.Application\\Repositories\\ISolutionRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T19:46:28.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DownloadSolutionRequestHandler.cs",
+              "DocumentMoniker": "X:\\Szko\u0142a\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\SolutionRequests\\DownloadSolution\\DownloadSolutionRequestHandler.cs",
+              "RelativeDocumentMoniker": "system_przesylania_projektow.Application\\Requests\\SolutionRequests\\DownloadSolution\\DownloadSolutionRequestHandler.cs",
+              "ToolTip": "X:\\Szko\u0142a\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\SolutionRequests\\DownloadSolution\\DownloadSolutionRequestHandler.cs",
+              "RelativeToolTip": "system_przesylania_projektow.Application\\Requests\\SolutionRequests\\DownloadSolution\\DownloadSolutionRequestHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T19:42:34.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DownloadSolutionDto.cs",
+              "DocumentMoniker": "X:\\Szko\u0142a\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\SolutionRequests\\DownloadSolution\\DownloadSolutionDto.cs",
+              "RelativeDocumentMoniker": "system_przesylania_projektow.Application\\Requests\\SolutionRequests\\DownloadSolution\\DownloadSolutionDto.cs",
+              "ToolTip": "X:\\Szko\u0142a\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\SolutionRequests\\DownloadSolution\\DownloadSolutionDto.cs",
+              "RelativeToolTip": "system_przesylania_projektow.Application\\Requests\\SolutionRequests\\DownloadSolution\\DownloadSolutionDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T19:42:24.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SolutionController.cs",
+              "DocumentMoniker": "X:\\Szko\u0142a\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Api\\Controllers\\SolutionController.cs",
+              "RelativeDocumentMoniker": "system_przesylania_projektow.Api\\Controllers\\SolutionController.cs",
+              "ToolTip": "X:\\Szko\u0142a\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Api\\Controllers\\SolutionController.cs",
+              "RelativeToolTip": "system_przesylania_projektow.Api\\Controllers\\SolutionController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAkwDMAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T19:37:52.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProjectSolution.cs",
+              "DocumentMoniker": "X:\\Szko\u0142a\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\Entities\\ProjectSolution.cs",
+              "RelativeDocumentMoniker": "system_przesylania_projektow.Core\\Entities\\ProjectSolution.cs",
+              "ToolTip": "X:\\Szko\u0142a\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\Entities\\ProjectSolution.cs",
+              "RelativeToolTip": "system_przesylania_projektow.Core\\Entities\\ProjectSolution.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T19:49:13.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DownloadSolutionRequest.cs",
+              "DocumentMoniker": "X:\\Szko\u0142a\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\SolutionRequests\\DownloadSolution\\DownloadSolutionRequest.cs",
+              "RelativeDocumentMoniker": "system_przesylania_projektow.Application\\Requests\\SolutionRequests\\DownloadSolution\\DownloadSolutionRequest.cs",
+              "ToolTip": "X:\\Szko\u0142a\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\SolutionRequests\\DownloadSolution\\DownloadSolutionRequest.cs",
+              "RelativeToolTip": "system_przesylania_projektow.Application\\Requests\\SolutionRequests\\DownloadSolution\\DownloadSolutionRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T19:42:18.716Z",
+              "EditorCaption": ""
             }
           ]
         },

@@ -286,6 +286,42 @@ function Home() {
     }
   };
 
+  function base64ToArrayBuffer(base64) {
+    var binaryString = window.atob(base64);
+    var binaryLen = binaryString.length;
+    var bytes = new Uint8Array(binaryLen);
+    for (var i = 0; i < binaryLen; i++) {
+      var ascii = binaryString.charCodeAt(i);
+      bytes[i] = ascii;
+    }
+    return bytes;
+  }
+
+  const downloadSolution = async (solutionId) => {
+    try {
+      const response = await axios.get(
+        `${baseUrl}/solution/${solutionId}`,
+        authorization(localStorage.getItem("token"))
+      );
+
+      console.log(response.data);
+
+      var blob = new Blob([base64ToArrayBuffer(response.data.fileContent)], {
+        type: response.data.contentType,
+      });
+
+      console.log(blob);
+
+      var link = document.createElement("a");
+      link.href = window.URL.createObjectURL(blob);
+
+      link.download = response.data.fileName;
+      link.click();
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   if (!authorize) {
     return <div className={classes.loading} />;
   }
@@ -364,7 +400,10 @@ function Home() {
                         <p>Zadania:</p>
                         <div className={classes["stud-tasks"]}>
                           {student.solutions.map((solution, soli) => (
-                            <p key={solution.id}>
+                            <p
+                              key={solution.id}
+                              onClick={() => downloadSolution(solution.id)}
+                            >
                               .{solution.fileName.split(".").pop()}
                               <span>{solution.fileName}</span>
                             </p>
