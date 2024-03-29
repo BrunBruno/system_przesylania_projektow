@@ -6,4 +6,5 @@ public interface IStudentRepository {
     Task<ProjectStudent?> GetStudentById(Guid id);
     Task UpdateStudent(ProjectStudent student);
     Task<ProjectStudent?> GetStudentByUserIdAndProjectId(Guid userId, Guid projectId);
+    Task DeleteStudent(ProjectStudent student);
 }

@@ -69,6 +69,10 @@ namespace system_przesylania_projektow.Infrastructure.Migrations
                     b.Property<Guid>("TaskId")
                         .HasColumnType("uuid");
 
+                    b.Property<string>("TaskName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.HasKey("Id");
 
                     b.HasIndex("StudentId");

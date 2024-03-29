@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using system_przesylania_projektow.Application.Requests.SolutionRequests.AddSolution;
 using system_przesylania_projektow.Application.Requests.SolutionRequests.DeleteSolution;
+using system_przesylania_projektow.Application.Requests.SolutionRequests.DownloadAllSoludtions;
 using system_przesylania_projektow.Application.Requests.SolutionRequests.DownloadSolution;
 
 namespace system_przesylania_projektow.Api.Controllers; 
@@ -49,6 +50,13 @@ public class SolutionController : ControllerBase {
     [HttpGet("all-{projectId}")]
     [Authorize(Roles = "Teacher")]
     public async Task<IActionResult> DownloadAllSolutions([FromRoute] Guid projectId) {
-        return Ok();
+        var request = new DownloadAllSolutionsRequest()
+        {
+            ProjectId = projectId
+        };
+
+        var solutions = await _mediator.Send(request);
+
+        return Ok(solutions);
     }
 }

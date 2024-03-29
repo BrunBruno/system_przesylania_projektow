@@ -3,6 +3,7 @@ import { useCallback, useEffect, useState } from "react";
 import axios from "axios";
 import { baseUrl, authorization } from "../../ApiOptions.js";
 import classes from "./Home.module.css";
+import JSZip from "jszip";
 
 function Home() {
   const roles = {
@@ -214,6 +215,19 @@ function Home() {
     }
   };
 
+  const rejectStudent = async (studentId) => {
+    try {
+      await axios.delete(
+        `${baseUrl}/student/${studentId}`,
+        authorization(localStorage.getItem("token"))
+      );
+
+      editProject(selectedProject.id);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   const checkStudent = (project) => {
     const student = project.students.filter(
       (student) => student.userId === userInfo.id
@@ -235,7 +249,11 @@ function Home() {
       }
     } else {
       return (
-        <p className={classes.e} onClick={() => joinStudent(project.id)}>
+        <p
+          className={classes.e}
+          style={{ color: "#fff" }}
+          onClick={() => joinStudent(project.id)}
+        >
           Dołącz do projectu
         </p>
       );
@@ -304,22 +322,115 @@ function Home() {
         authorization(localStorage.getItem("token"))
       );
 
-      console.log(response.data);
-
       var blob = new Blob([base64ToArrayBuffer(response.data.fileContent)], {
         type: response.data.contentType,
       });
-
-      console.log(blob);
 
       var link = document.createElement("a");
       link.href = window.URL.createObjectURL(blob);
 
       link.download = response.data.fileName;
       link.click();
+
+      document.body.removeChild(link);
     } catch (err) {
       console.log(err);
     }
+  };
+
+  const sanitizeFolderName = (name) => {
+    return name.replace(/[<>:"\/\\|?*]/g, "");
+  };
+
+  const downloadSolutions = async (projectId) => {
+    try {
+      const response = await axios.get(
+        `${baseUrl}/solution/all-${projectId}`,
+        authorization(localStorage.getItem("token"))
+      );
+
+      const zip = new JSZip();
+
+      response.data.students.forEach((student) => {
+        const studentFolder = zip.folder(student.studentName);
+
+        const taskFoldersMap = new Map();
+
+        student.solutions.forEach((file) => {
+          const sanitizedTaskName = sanitizeFolderName(file.taskName);
+
+          let taskFolder = taskFoldersMap.get(sanitizedTaskName);
+          if (!taskFolder) {
+            taskFolder = studentFolder.folder(sanitizedTaskName);
+            taskFoldersMap.set(sanitizedTaskName, taskFolder);
+          }
+
+          const contentArray = base64ToArrayBuffer(file.fileContent);
+
+          const blob = new Blob([contentArray], { type: file.contentType });
+          console.log(file.fileName);
+          taskFolder.file(file.fileName, blob);
+        });
+      });
+
+      const zipBlob = await zip.generateAsync({ type: "blob" });
+
+      const zipURL = URL.createObjectURL(zipBlob);
+
+      const link = document.createElement("a");
+      link.href = zipURL;
+
+      let date = new Date();
+
+      if (date.getMonth() <= 8) {
+        date = date.getFullYear() - 1 + "_" + date.getFullYear();
+      } else {
+        date = date.getFullYear() + "_" + date.getFullYear() + 1;
+      }
+
+      link.setAttribute(
+        "download",
+        `${response.data.ownerName}_${response.data.projectName}_${date}.zip`
+      );
+
+      document.body.appendChild(link);
+      link.click();
+
+      URL.revokeObjectURL(zipURL);
+      document.body.removeChild(link);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  const checkOverdueSolutions = (student) => {
+    if (!student.isAccepted) {
+      return "";
+    }
+
+    const solutions = student.solutions;
+
+    const overdueTasks = selectedProject.tasks.filter(
+      (task) =>
+        !solutions.some((solution) => solution.taskId === task.id) &&
+        new Date(task.endDate) < new Date()
+    );
+
+    console.log(overdueTasks);
+    console.log(solutions);
+
+    if (overdueTasks.length === 0) {
+      return "";
+    }
+
+    return (
+      <div className={classes.overdue}>
+        <p>Nieprzekazano:</p>
+        {overdueTasks.map((otask) => (
+          <p>- {otask.name}</p>
+        ))}
+      </div>
+    );
   };
 
   if (!authorize) {
@@ -397,25 +508,35 @@ function Home() {
                     {selectedProject.students.map((student, si) => (
                       <li key={student.id}>
                         <p>{student.name}</p>
-                        <p>Zadania:</p>
-                        <div className={classes["stud-tasks"]}>
-                          {student.solutions.map((solution, soli) => (
-                            <p
-                              key={solution.id}
-                              onClick={() => downloadSolution(solution.id)}
-                            >
-                              .{solution.fileName.split(".").pop()}
-                              <span>{solution.fileName}</span>
-                            </p>
-                          ))}
-                        </div>
+
+                        {checkOverdueSolutions(student)}
+
+                        {student.isAccepted && (
+                          <p style={{ fontWeight: 600 }}>Przesłane pliki:</p>
+                        )}
+                        {student.isAccepted && (
+                          <div className={classes["stud-tasks"]}>
+                            {student.solutions.map((solution, soli) => (
+                              <p
+                                key={solution.id}
+                                onClick={() => downloadSolution(solution.id)}
+                              >
+                                .{solution.fileName.split(".").pop()}
+                                <span>{solution.fileName}</span>
+                              </p>
+                            ))}
+                          </div>
+                        )}
+
                         {!student.isAccepted && (
-                          <p
-                            className={classes.accept}
-                            onClick={() => acceptStudent(student.id)}
-                          >
-                            Zaakceptuj
-                          </p>
+                          <div className={classes.accept}>
+                            <p onClick={() => acceptStudent(student.id)}>
+                              Zaakceptuj
+                            </p>
+                            <p onClick={() => rejectStudent(student.id)}>
+                              Odrzuć
+                            </p>
+                          </div>
                         )}
                       </li>
                     ))}
@@ -472,7 +593,9 @@ function Home() {
                   {userInfo.role === roles.teacher ? (
                     <div className={classes.buttons}>
                       <p onClick={() => editProject(project.id)}>Edytuj</p>
-                      <p>Exportuj</p>
+                      <p onClick={() => downloadSolutions(project.id)}>
+                        Exportuj
+                      </p>
                       <p onClick={() => setProjectToDelete(project.id)}>Usuń</p>
                     </div>
                   ) : (

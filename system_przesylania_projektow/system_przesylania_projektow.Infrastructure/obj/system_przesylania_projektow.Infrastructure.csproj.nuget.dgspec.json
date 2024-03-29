@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "X:\\Szkoła\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Infrastructure\\system_przesylania_projektow.Infrastructure.csproj": {}
+    "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Infrastructure\\system_przesylania_projektow.Infrastructure.csproj": {}
   },
   "projects": {
-    "X:\\Szkoła\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj": {
+    "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "X:\\Szkoła\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj",
+        "projectUniqueName": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj",
         "projectName": "system_przesylania_projektow.Application",
-        "projectPath": "X:\\Szkoła\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj",
-        "packagesPath": "C:\\Users\\Bruno\\.nuget\\packages\\",
-        "outputPath": "X:\\Szkoła\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\obj\\",
+        "projectPath": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj",
+        "packagesPath": "C:\\Users\\DST\\.nuget\\packages\\",
+        "outputPath": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DST\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +32,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "X:\\Szkoła\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj": {
-                "projectPath": "X:\\Szkoła\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj"
+              "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj": {
+                "projectPath": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj"
               },
-              "X:\\Szkoła\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Shared\\system_przesylania_projektow.Shared.csproj": {
-                "projectPath": "X:\\Szkoła\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Shared\\system_przesylania_projektow.Shared.csproj"
+              "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Shared\\system_przesylania_projektow.Shared.csproj": {
+                "projectPath": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Shared\\system_przesylania_projektow.Shared.csproj"
               }
             }
           }
@@ -107,17 +111,21 @@
         }
       }
     },
-    "X:\\Szkoła\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj": {
+    "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "X:\\Szkoła\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj",
+        "projectUniqueName": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj",
         "projectName": "system_przesylania_projektow.Core",
-        "projectPath": "X:\\Szkoła\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj",
-        "packagesPath": "C:\\Users\\Bruno\\.nuget\\packages\\",
-        "outputPath": "X:\\Szkoła\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\obj\\",
+        "projectPath": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\system_przesylania_projektow.Core.csproj",
+        "packagesPath": "C:\\Users\\DST\\.nuget\\packages\\",
+        "outputPath": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DST\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -207,17 +215,21 @@
         }
       }
     },
-    "X:\\Szkoła\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Infrastructure\\system_przesylania_projektow.Infrastructure.csproj": {
+    "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Infrastructure\\system_przesylania_projektow.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "X:\\Szkoła\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Infrastructure\\system_przesylania_projektow.Infrastructure.csproj",
+        "projectUniqueName": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Infrastructure\\system_przesylania_projektow.Infrastructure.csproj",
         "projectName": "system_przesylania_projektow.Infrastructure",
-        "projectPath": "X:\\Szkoła\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Infrastructure\\system_przesylania_projektow.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Bruno\\.nuget\\packages\\",
-        "outputPath": "X:\\Szkoła\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Infrastructure\\obj\\",
+        "projectPath": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Infrastructure\\system_przesylania_projektow.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\DST\\.nuget\\packages\\",
+        "outputPath": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DST\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -231,11 +243,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "X:\\Szkoła\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj": {
-                "projectPath": "X:\\Szkoła\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj"
+              "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj": {
+                "projectPath": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj"
               },
-              "X:\\Szkoła\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Shared\\system_przesylania_projektow.Shared.csproj": {
-                "projectPath": "X:\\Szkoła\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Shared\\system_przesylania_projektow.Shared.csproj"
+              "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Shared\\system_przesylania_projektow.Shared.csproj": {
+                "projectPath": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Shared\\system_przesylania_projektow.Shared.csproj"
               }
             }
           }
@@ -314,17 +326,21 @@
         }
       }
     },
-    "X:\\Szkoła\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Shared\\system_przesylania_projektow.Shared.csproj": {
+    "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Shared\\system_przesylania_projektow.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "X:\\Szkoła\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Shared\\system_przesylania_projektow.Shared.csproj",
+        "projectUniqueName": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Shared\\system_przesylania_projektow.Shared.csproj",
         "projectName": "system_przesylania_projektow.Shared",
-        "projectPath": "X:\\Szkoła\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Shared\\system_przesylania_projektow.Shared.csproj",
-        "packagesPath": "C:\\Users\\Bruno\\.nuget\\packages\\",
-        "outputPath": "X:\\Szkoła\\Studia\\Semestr 6\\WAW\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Shared\\obj\\",
+        "projectPath": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Shared\\system_przesylania_projektow.Shared.csproj",
+        "packagesPath": "C:\\Users\\DST\\.nuget\\packages\\",
+        "outputPath": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Shared\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DST\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

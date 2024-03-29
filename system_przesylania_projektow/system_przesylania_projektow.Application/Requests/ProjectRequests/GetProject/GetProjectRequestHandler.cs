@@ -46,7 +46,7 @@ public class GetProjectRequestHandler : IRequestHandler<GetProjectRequest, GetPr
             Id = project.Id,
             Name = project.Name,
             OwnerName = project.Owner.LastName,
-            Students = project.Students.Select(s => new StudentDto { 
+            Students = project.Students.OrderBy(s => s.IsAccepted).ThenBy(s => s.Name).Select(s => new StudentDto { 
                 Id = s.Id,
                 Name = s.Name,
                 IsAccepted = s.IsAccepted,

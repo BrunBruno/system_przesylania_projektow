@@ -290,8 +290,6 @@
   font-weight: 550;
 }
 
-.students {
-}
 .students > li > p:nth-child(1) {
   font-size: 1.6rem;
   font-weight: 550;
@@ -299,8 +297,36 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.students > li > p.accept {
-  background-color: rgba(0, 255, 0, 1);
+
+.overdue > p:nth-child(1) {
+  color: #dc143c;
+  font-weight: 600;
+}
+.overdue > p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.accept {
+  margin-top: 0.5rem;
+  align-self: flex-end;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.accept > p:nth-child(1) {
+  background-color: rgba(0, 255, 0, 0.7);
+  width: fit-content;
+  align-self: flex-end;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+.accept > p:nth-child(2) {
+  background-color: rgba(255, 0, 0, 0.7);
   width: fit-content;
   align-self: flex-end;
   padding: 0.5rem;
@@ -338,9 +364,7 @@
   max-width: 10rem;
   position: absolute;
   background-color: #242424;
-  top: 50%;
-  left: 110%;
-  transform: translateY(-50%);
+  bottom: 110%;
   width: fit-content;
   word-wrap: break-word;
   padding: 0.2rem;
