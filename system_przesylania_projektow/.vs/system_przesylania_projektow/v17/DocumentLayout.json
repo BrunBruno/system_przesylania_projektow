@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|d:\\projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.application\\requests\\solutionrequests\\downloadallsoludtions\\downloadallsolutionsrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|solutionrelative:system_przesylania_projektow.application\\requests\\solutionrequests\\downloadallsoludtions\\downloadallsolutionsrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|d:\\projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.application\\requests\\projectrequests\\getproject\\getprojectrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|solutionrelative:system_przesylania_projektow.application\\requests\\projectrequests\\getproject\\getprojectrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|d:\\projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.application\\requests\\projectrequests\\getproject\\getprojectrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BBE8E76-8B95-4FBF-99AA-987009ACB873}|system_przesylania_projektow.Application\\system_przesylania_projektow.Application.csproj|solutionrelative:system_przesylania_projektow.application\\requests\\projectrequests\\getproject\\getprojectrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{157E8A40-AFFD-438C-8A2E-CBFA30A993D6}|system_przesylania_projektow.Api\\system_przesylania_projektow.Api.csproj|d:\\projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.api\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{157E8A40-AFFD-438C-8A2E-CBFA30A993D6}|system_przesylania_projektow.Api\\system_przesylania_projektow.Api.csproj|solutionrelative:system_przesylania_projektow.api\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,7 +46,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DownloadAllSolutionsRequestHandler.cs",
+              "DocumentMoniker": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\SolutionRequests\\DownloadAllSoludtions\\DownloadAllSolutionsRequestHandler.cs",
+              "RelativeDocumentMoniker": "system_przesylania_projektow.Application\\Requests\\SolutionRequests\\DownloadAllSoludtions\\DownloadAllSolutionsRequestHandler.cs",
+              "ToolTip": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\SolutionRequests\\DownloadAllSoludtions\\DownloadAllSolutionsRequestHandler.cs",
+              "RelativeToolTip": "system_przesylania_projektow.Application\\Requests\\SolutionRequests\\DownloadAllSoludtions\\DownloadAllSolutionsRequestHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T11:04:02.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetProjectRequestHandler.cs",
+              "DocumentMoniker": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\ProjectRequests\\GetProject\\GetProjectRequestHandler.cs",
+              "RelativeDocumentMoniker": "system_przesylania_projektow.Application\\Requests\\ProjectRequests\\GetProject\\GetProjectRequestHandler.cs",
+              "ToolTip": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\ProjectRequests\\GetProject\\GetProjectRequestHandler.cs",
+              "RelativeToolTip": "system_przesylania_projektow.Application\\Requests\\ProjectRequests\\GetProject\\GetProjectRequestHandler.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowDAAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T10:16:14.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "GetProjectRequest.cs",
+              "DocumentMoniker": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\ProjectRequests\\GetProject\\GetProjectRequest.cs",
+              "RelativeDocumentMoniker": "system_przesylania_projektow.Application\\Requests\\ProjectRequests\\GetProject\\GetProjectRequest.cs",
+              "ToolTip": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\ProjectRequests\\GetProject\\GetProjectRequest.cs",
+              "RelativeToolTip": "system_przesylania_projektow.Application\\Requests\\ProjectRequests\\GetProject\\GetProjectRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T10:16:10.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "StudentRepository.cs",
               "DocumentMoniker": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Infrastructure\\EF\\Repositories\\StudentRepository.cs",
               "RelativeDocumentMoniker": "system_przesylania_projektow.Infrastructure\\EF\\Repositories\\StudentRepository.cs",
@@ -47,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "RejectStudentRequestHandler.cs",
               "DocumentMoniker": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\StudentRequests\\RejectStudent\\RejectStudentRequestHandler.cs",
               "RelativeDocumentMoniker": "system_przesylania_projektow.Application\\Requests\\StudentRequests\\RejectStudent\\RejectStudentRequestHandler.cs",
@@ -60,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "RejectStudentRequest.cs",
               "DocumentMoniker": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Application\\Requests\\StudentRequests\\RejectStudent\\RejectStudentRequest.cs",
               "RelativeDocumentMoniker": "system_przesylania_projektow.Application\\Requests\\StudentRequests\\RejectStudent\\RejectStudentRequest.cs",
@@ -73,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "StudentController.cs",
               "DocumentMoniker": "D:\\Projekty\\spp\\system_przesylania_projektow\\system_przesylania_projektow\\system_przesylania_projektow.Api\\Controllers\\StudentController.cs",
               "RelativeDocumentMoniker": "system_przesylania_projektow.Api\\Controllers\\StudentController.cs",
