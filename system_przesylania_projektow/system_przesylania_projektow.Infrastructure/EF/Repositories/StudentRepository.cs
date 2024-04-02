@@ -29,4 +29,9 @@ public class StudentRepository : IStudentRepository {
     public async Task<ProjectStudent?> GetStudentByUserIdAndProjectId(Guid userId, Guid projectId) 
         => await _dbContext.Students
             .FirstOrDefaultAsync(x => x.UserId == userId && x.ProjectId == projectId);
+
+    public async Task DeleteStudent(ProjectStudent student) {
+        _dbContext.Students.Remove(student);
+        await _dbContext.SaveChangesAsync();
+    }
 }

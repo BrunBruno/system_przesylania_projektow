@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using system_przesylania_projektow.Application.Requests.StudentRequests.AcceptStudent;
 using system_przesylania_projektow.Application.Requests.StudentRequests.JoinStudent;
+using system_przesylania_projektow.Application.Requests.StudentRequests.RejectStudent;
 
 namespace system_przesylania_projektow.Api.Controllers;
 
@@ -25,6 +26,17 @@ public class StudentController : ControllerBase {
     [HttpPut("accept")]
     [Authorize(Roles = "Teacher")]
     public async Task<IActionResult> AcceptStudent(AcceptStudentRequest request) {
+        await _mediator.Send(request);
+        return Ok();
+    }
+
+    [HttpDelete("{studentId}")]
+    [Authorize(Roles = "Teacher")]
+    public async Task<IActionResult> RejectStudent([FromRoute] Guid studentId) {
+        var request = new RejectStudentRequest()
+        {
+            StudentId = studentId
+        };
         await _mediator.Send(request);
         return Ok();
     }

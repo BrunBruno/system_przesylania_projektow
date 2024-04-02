@@ -9,11 +9,13 @@ public class AddSolutionRequestHandler : IRequestHandler<AddSolutionRequest> {
     private readonly IUserContextService _userContext;
     private readonly ISolutionRepository _solutionRepository;
     private readonly IStudentRepository _studentRepository;
+    private readonly ITaskRepository _taskRepository;
 
-    public AddSolutionRequestHandler(IUserContextService userConext, ISolutionRepository solutionRepository, IStudentRepository studentRepository) {
+    public AddSolutionRequestHandler(IUserContextService userConext, ISolutionRepository solutionRepository, IStudentRepository studentRepository, ITaskRepository taskRepository) {
         _userContext = userConext;
         _solutionRepository = solutionRepository;
         _studentRepository = studentRepository;
+        _taskRepository = taskRepository;
     }
 
     public async Task Handle(AddSolutionRequest request, CancellationToken cancellationToken) {
@@ -21,7 +23,10 @@ public class AddSolutionRequestHandler : IRequestHandler<AddSolutionRequest> {
 
         var student = await _studentRepository.GetStudentByUserIdAndProjectId(userId, request.ProjectId)
             ?? throw new NotFoundException("Nie znaleziono studenta");
-    
+
+        var task = await _taskRepository.GetTaskById(request.TaskId)
+            ?? throw new NotFoundException("Nie znaleziono zadania");
+
 
         var memoryStream = new MemoryStream();
         request.File.CopyTo(memoryStream);
@@ -33,7 +38,8 @@ public class AddSolutionRequestHandler : IRequestHandler<AddSolutionRequest> {
             FileType = request.File.ContentType,
             DocByte = memoryStream.ToArray(),
             StudentId = student.Id,
-            TaskId = request.TaskId
+            TaskId = request.TaskId,
+            TaskName = task.Name
         };
 
         await _solutionRepository.AddSolution(solution);
