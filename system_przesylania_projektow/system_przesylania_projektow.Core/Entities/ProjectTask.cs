@@ -11,4 +11,6 @@ public class ProjectTask {
     public Guid ProjectId { get; set; }
     public Project Project { get; set; }
 
+    public List<ProjectSolution> Solutions { get; set; }
+
 }

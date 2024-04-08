@@ -12,6 +12,7 @@ public class ProjectSolution {
     public ProjectStudent Student { get; set; }
 
     public Guid TaskId { get; set; }
+    public ProjectTask Task { get; set; }
     public string TaskName { get; set; }
 
 

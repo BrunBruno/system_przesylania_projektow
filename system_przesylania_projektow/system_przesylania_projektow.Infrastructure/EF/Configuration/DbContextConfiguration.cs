@@ -68,6 +68,10 @@ public class DbContextConfiguration : IEntityTypeConfiguration<User>,
             .HasOne(x => x.Student)
             .WithMany(x => x.Solutions)
             .HasForeignKey(x => x.StudentId);
+        builder
+            .HasOne(x => x.Task)
+            .WithMany(x => x.Solutions)
+            .HasForeignKey(x => x.TaskId);
 
     }
 
